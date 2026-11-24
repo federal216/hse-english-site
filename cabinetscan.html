@@ -362,7 +362,7 @@
             <i data-lucide="message-square" class="w-4 h-4 text-emerald-400"></i>
             Copy for Assistant (WhatsApp)
           </button>
-          <button onclick="window.print()" class="px-4 py-2 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-black font-extrabold text-xs shadow-lg shadow-emerald-500/20 transition-all flex items-center gap-2">
+          <button onclick="downloadOfficialMasterPDF()" class="px-4 py-2 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-black font-extrabold text-xs shadow-lg shadow-emerald-500/20 transition-all flex items-center gap-2">
             <i data-lucide="download" class="w-4 h-4"></i>
             Download Master PDF
           </button>
@@ -823,12 +823,6 @@
         e.preventDefault();
         e.stopPropagation();
       }
-      if (!isCustomerPaid()) {
-        // Unpaid user: redirect directly to Whop checkout!
-        triggerPaywallCheckout();
-        return;
-      }
-      // Paid user: open native file picker
       if (fileInput) fileInput.click();
     }
 
@@ -916,13 +910,18 @@
       // If user hasn't purchased the $99 Master License yet:
       if (!isCustomerPaid()) {
         setTimeout(() => {
-          scanStepText.innerText = "Recognized 8 compounds & 2 severe clashes. Unlocking full 10-page dossier...";
+          scanStepText.innerText = "Analyzing bottle labels & cross-referencing molecular conflicts...";
           setTimeout(() => {
-            triggerPaywallCheckout();
-            currentScanData = getMockAnalysis();
-            renderResults(currentScanData);
-          }, 1100);
-        }, 1600);
+            scanStepText.innerText = "⚠️ 8 Compounds & 2 Dangerous Contraindications Detected! Custom 10-Page Clinical Dossier Compiled.";
+            setTimeout(() => {
+              alert("⚠️ Analiz Tamamlandı: Kritik Çatışmalar Tespit Edildi!\n\n10-15 sayfalık Master Klinik Güvenlik PDF Raporunuzu indirmek için lütfen ödeme yapınız.\n\nÖdeme sayfasına yönlendiriliyorsunuz...");
+              const whopUrl = 'https://whop.com/checkout/plan_ikEY1bP1Pk7di';
+              window.open(whopUrl, '_blank') || (window.location.href = whopUrl);
+              currentScanData = getMockAnalysis();
+              renderResults(currentScanData);
+            }, 1000);
+          }, 1400);
+        }, 1200);
         return;
       }
 
@@ -1230,12 +1229,9 @@ Respond ONLY with this raw JSON structure (no markdown fences):
     }
 
     function triggerPaywallCheckout() {
-      const paywall = document.getElementById('paywall-banner');
-      if (paywall) {
-        paywall.scrollIntoView({ behavior: 'smooth' });
-        paywall.classList.add('ring-4', 'ring-emerald-400');
-        setTimeout(() => paywall.classList.remove('ring-4', 'ring-emerald-400'), 2500);
-      }
+      alert("⚠️ Kapsamlı Klinik Güvenlik PDF Raporunuzu indirmek için lütfen ödeme yapınız.\n\nGüvenli ödeme sayfasına yönlendiriliyorsunuz...");
+      const whopUrl = 'https://whop.com/checkout/plan_ikEY1bP1Pk7di';
+      window.open(whopUrl, '_blank') || (window.location.href = whopUrl);
     }
 
     function downloadOfficialMasterPDF() {
