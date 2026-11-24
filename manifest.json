@@ -1,0 +1,16 @@
+{
+  "name": "LamboSpec AI — Pre-Purchase Supercar Intelligence",
+  "short_name": "LamboSpec",
+  "description": "Autonomous Lamborghini Pre-Purchase Inspection & Mechanical Negotiation Dossier",
+  "start_url": "/lambospec.html",
+  "display": "standalone",
+  "background_color": "#08090d",
+  "theme_color": "#f97316",
+  "icons": [
+    {
+      "src": "presenter_poster.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg"
+    }
+  ]
+}
