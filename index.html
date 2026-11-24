@@ -6,6 +6,19 @@
 <title>HSE English — İSG Mesleki İngilizce</title>
 <meta name="description" content="HSE English: iş sağlığı ve güvenliği (İSG/OHS) mesleki İngilizce sözlük ve öğrenme uygulaması.">
 <link rel="stylesheet" href="style.css">
+<style>
+.pricing-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; margin: 20px 0; }
+.pricing-card { background: var(--card); border: 2px solid var(--line); border-radius: 12px; padding: 22px; text-align: left; transition: border-color .2s; }
+.pricing-card.featured { border-color: var(--accent); position: relative; }
+.pricing-card .badge { position: absolute; top: -12px; right: 16px; background: var(--accent); color: #fff; font-size: 0.75rem; font-weight: bold; padding: 3px 10px; border-radius: 99px; }
+.pricing-card h3 { margin: 0 0 6px; font-size: 1.25rem; }
+.pricing-card .price { font-size: 1.85rem; font-weight: bold; color: var(--fg); margin: 8px 0 14px; }
+.pricing-card .price span { font-size: 0.9rem; font-weight: normal; color: var(--muted); }
+.pricing-card ul { margin: 0 0 18px; padding-left: 18px; font-size: 0.92rem; }
+.pricing-card ul li { margin-bottom: 6px; }
+.btn { display: inline-block; width: 100%; text-align: center; background: var(--accent); color: #fff; text-decoration: none; padding: 10px 16px; border-radius: 8px; font-weight: 600; box-sizing: border-box; }
+.btn:hover { opacity: 0.9; }
+</style>
 </head>
 <body>
 <main>
@@ -15,13 +28,46 @@
   <p>HSE English, iş sağlığı ve güvenliği (İSG) terimlerini görselli kartlarla, birçok dilde karşılıklarıyla ve sesli okunuşlarıyla öğreten bir mobil uygulamadır.</p>
   <p>HSE English is a mobile app that teaches occupational health and safety (OHS) vocabulary with picture cards, translations in many languages and spoken pronunciation.</p>
 
-  <div class="card">
+  <h2 id="pricing">Fiyatlandırma / Pricing Plans</h2>
+  <p class="muted">Choose the plan that suits your learning and professional certification goals.</p>
+
+  <div class="pricing-grid">
+    <div class="pricing-card">
+      <h3>Monthly Pro</h3>
+      <div class="price">$9.99 <span>/ month</span></div>
+      <ul>
+        <li>Full access to 1,500+ HSE terms & cards</li>
+        <li>Spoken native audio pronunciation</li>
+        <li>Interactive quizzes & flashcards</li>
+        <li>Cancel anytime</li>
+      </ul>
+      <a href="#destek" class="btn">Get Started</a>
+    </div>
+
+    <div class="pricing-card featured">
+      <span class="badge">BEST VALUE</span>
+      <h3>Lifetime Access</h3>
+      <div class="price">$29.99 <span>one-time</span></div>
+      <ul>
+        <li>Everything in Monthly Pro</li>
+        <li>Lifetime updates & new modules</li>
+        <li>NEBOSH & IOSH exam preparation sets</li>
+        <li>AI incident report & speech practice</li>
+        <li>One-time payment, no recurring fees</li>
+      </ul>
+      <a href="#destek" class="btn">Get Lifetime Access</a>
+    </div>
+  </div>
+
+  <div class="card" id="destek">
     <strong>Destek / Support</strong><br>
-    Soru, talep ve şikâyetleriniz için / For questions and requests:<br>
+    Soru, satın alma ve talepleriniz için / For questions, billing &amp; requests:<br>
     <a href="mailto:hseenglishdestek@gmail.com">hseenglishdestek@gmail.com</a>
   </div>
 
   <nav>
+    <a href="#pricing">Fiyatlandırma / Pricing</a>
+    <a href="terms.html">Kullanım Koşulları / Terms of Service</a>
     <a href="privacy.html">Gizlilik Politikası / Privacy Policy</a>
     <a href="privacy.html#delete">Hesap ve veri silme / Account &amp; data deletion</a>
   </nav>
