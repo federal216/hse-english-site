@@ -1,113 +1,563 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en" class="dark">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>HSE English & LamboSpec AI — Software & Digital Services</title>
-<meta name="description" content="HSE English & LamboSpec AI: Specialized software solutions for occupational health education and automotive AI defect inspection.">
-<link rel="stylesheet" href="style.css">
-<style>
-.featured-product { background: linear-gradient(135deg, rgba(245, 158, 11, 0.08), rgba(220, 38, 38, 0.05)); border: 2px solid #f59e0b; border-radius: 14px; padding: 24px; margin: 24px 0; text-align: left; position: relative; }
-.featured-badge { position: absolute; top: -12px; right: 20px; background: #f59e0b; color: #000; font-size: 0.75rem; font-weight: 800; text-transform: uppercase; padding: 4px 12px; border-radius: 99px; letter-spacing: 0.5px; }
-.featured-product h2 { margin: 0 0 8px; font-size: 1.45rem; color: #f59e0b; }
-.featured-product .price-tag { font-size: 2rem; font-weight: 800; color: var(--fg); margin: 10px 0 14px; }
-.featured-product .price-tag span { font-size: 0.95rem; font-weight: normal; color: var(--muted); }
-.featured-product p { font-size: 0.95rem; line-height: 1.55; margin: 0 0 16px; }
-.featured-product ul { margin: 0 0 20px; padding-left: 20px; font-size: 0.92rem; }
-.featured-product ul li { margin-bottom: 6px; }
-.btn-gold { display: inline-block; background: #f59e0b; color: #000; font-weight: 700; text-decoration: none; padding: 12px 24px; border-radius: 8px; font-size: 0.95rem; transition: opacity .2s; }
-.btn-gold:hover { opacity: 0.9; }
-
-.pricing-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; margin: 20px 0; }
-.pricing-card { background: var(--card); border: 2px solid var(--line); border-radius: 12px; padding: 22px; text-align: left; }
-.pricing-card.featured { border-color: var(--accent); position: relative; }
-.pricing-card .badge { position: absolute; top: -12px; right: 16px; background: var(--accent); color: #fff; font-size: 0.75rem; font-weight: bold; padding: 3px 10px; border-radius: 99px; }
-.pricing-card h3 { margin: 0 0 6px; font-size: 1.25rem; }
-.pricing-card .price { font-size: 1.85rem; font-weight: bold; color: var(--fg); margin: 8px 0 14px; }
-.pricing-card .price span { font-size: 0.9rem; font-weight: normal; color: var(--muted); }
-.pricing-card ul { margin: 0 0 18px; padding-left: 18px; font-size: 0.92rem; }
-.pricing-card ul li { margin-bottom: 6px; }
-.btn { display: inline-block; width: 100%; text-align: center; background: var(--accent); color: #fff; text-decoration: none; padding: 10px 16px; border-radius: 8px; font-weight: 600; box-sizing: border-box; }
-.btn:hover { opacity: 0.9; }
-nav a { margin-right: 14px; display: inline-block; margin-bottom: 6px; font-weight: 500; }
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HSE English & Specialized AI Intelligence Suite</title>
+  <meta name="description" content="Institutional-grade diagnostic engines, occupational safety English training, and forensic luxury appraisal systems. Instant 10-page verified PDF dossiers.">
+  <link rel="icon" type="image/png" href="logo.png">
+  <link rel="manifest" href="manifest.json">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              gold: '#f59e0b',
+              emerald: '#10b981',
+              cyan: '#06b6d4',
+              blue: '#3b82f6',
+              dark: '#0a0d14',
+              card: '#121722',
+              border: '#1f293d'
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body { background-color: #080b10; color: #e2e8f0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif; }
+    .glow-gold { box-shadow: 0 0 35px -5px rgba(245, 158, 11, 0.2); }
+    .glow-emerald { box-shadow: 0 0 35px -5px rgba(16, 185, 129, 0.2); }
+    .glow-cyan { box-shadow: 0 0 35px -5px rgba(6, 182, 212, 0.2); }
+    .glow-blue { box-shadow: 0 0 35px -5px rgba(59, 130, 246, 0.2); }
+  </style>
 </head>
-<body>
-<main>
-  <h1>HSE English &amp; Software Solutions</h1>
-  <p class="muted">İş Sağlığı ve Güvenliği Mesleki İngilizce &middot; Occupational Health &amp; Safety English &amp; Diagnostic AI</p>
+<body class="min-h-screen antialiased selection:bg-amber-500 selection:text-black">
 
-  <p>HSE English, iş sağlığı ve güvenliği (İSG) terimlerini görselli kartlarla, birçok dilde karşılıklarıyla ve sesli okunuşlarıyla öğreten bir mobil uygulamadır.</p>
-  <p>HSE English is a mobile app that teaches occupational health and safety (OHS) vocabulary with picture cards, translations in many languages and spoken pronunciation.</p>
+  <!-- TOP ANNOUNCEMENT BAR -->
+  <div class="bg-gradient-to-r from-amber-600 via-emerald-600 to-cyan-600 text-black text-xs font-bold py-2 px-4 text-center tracking-wide uppercase">
+    ⚡ 2026 Institutional Intelligence Release &bull; 10-Page In-Depth Dossiers &bull; Guaranteed Deliverables
+  </div>
 
-  <!-- LAMBOSPEC AI $79 SPECIAL PRODUCT SECTION -->
-  <div class="featured-product" id="lambospec">
-    <span class="featured-badge">FLAGSHIP AI PRODUCT</span>
-    <h2>🏎️ LamboSpec AI — Supercar Audit &amp; Negotiation Engine</h2>
-    <div class="price-tag">$79.00 <span>USD / one-time payment</span></div>
-    <p>Pre-purchase inspection and negotiation intelligence engine for exotic car buyers. Detects missing dealbreaker factory options, calculates upcoming maintenance costs, and generates a forensic 10-page dealer negotiation dossier.</p>
-    <ul>
-      <li><strong>Comprehensive 10-Page Forensic PDF Audit</strong></li>
-      <li><strong>Factory TSB Defect Matrix &amp; Mechanical Risk Breakdown</strong></li>
-      <li><strong>Real-World Auction Valuation Comps (BaT, RM Sotheby's)</strong></li>
-      <li><strong>Step-by-Step Dealer Negotiation Counter-Script</strong></li>
-      <li><strong>14-Day Money-Back Guarantee</strong></li>
-    </ul>
-    <div style="display:flex; gap:12px; flex-wrap:wrap;">
-      <a href="pricing.html" class="btn-gold">View $79 Pricing &amp; Details &rarr;</a>
-      <a href="lambospec.html" class="btn" style="background:#27272a; width:auto; padding:12px 20px;">Open LamboSpec AI App</a>
+  <!-- NAVIGATION -->
+  <header class="border-b border-zinc-800/80 bg-zinc-950/80 backdrop-blur-md sticky top-0 z-40">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3">
+        <div class="w-9 h-9 rounded-lg bg-gradient-to-tr from-amber-500 to-emerald-500 p-0.5 flex items-center justify-center shadow-md">
+          <img src="logo.png" alt="HSE" class="w-full h-full object-contain rounded-md" onerror="this.style.display='none'">
+        </div>
+        <div>
+          <span class="font-extrabold text-lg tracking-tight text-white">HSE English <span class="text-zinc-500 font-light">&amp; AI</span></span>
+          <span class="hidden sm:inline-block text-[10px] font-mono uppercase bg-zinc-800 text-zinc-300 px-2 py-0.5 rounded ml-2">v2.4 Suite</span>
+        </div>
+      </a>
+      <nav class="hidden md:flex items-center gap-6 text-sm font-medium text-zinc-300">
+        <a href="#apps" class="hover:text-amber-400 transition">AI Diagnostic Engines</a>
+        <a href="#mobile-app" class="hover:text-emerald-400 transition">HSE English Mobile</a>
+        <a href="pricing.html" class="hover:text-white transition">Pricing Table</a>
+        <a href="#destek" class="hover:text-white transition">Support</a>
+      </nav>
+      <div class="flex items-center gap-3">
+        <a href="pricing.html" class="text-xs font-semibold px-4 py-2 rounded-lg bg-zinc-800 hover:bg-zinc-700 text-white transition border border-zinc-700">
+          All Prices
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="max-w-5xl mx-auto px-4 sm:px-6 pt-16 pb-12 text-center">
+    <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-amber-500/30 bg-amber-500/10 text-amber-300 text-xs font-medium mb-6">
+      <span class="w-2 h-2 rounded-full bg-amber-400 animate-pulse"></span>
+      Precision Software &amp; Forensic Knowledge Systems
+    </div>
+    <h1 class="text-4xl sm:text-6xl font-black text-white tracking-tight leading-tight">
+      Professional Intelligence &amp; <br class="hidden sm:block">
+      <span class="bg-gradient-to-r from-amber-400 via-emerald-400 to-cyan-400 bg-clip-text text-transparent">
+        Forensic Diagnostic Suites
+      </span>
+    </h1>
+    <p class="mt-5 text-base sm:text-lg text-zinc-400 max-w-2xl mx-auto leading-relaxed">
+      From occupational safety certifications to high-stakes luxury watch and supercar acquisitions. Every report is generated as a comprehensive, multi-page forensic dossier.
+    </p>
+
+    <!-- TRUST STATS -->
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-10 max-w-3xl mx-auto text-left">
+      <div class="bg-zinc-900/50 border border-zinc-800 p-4 rounded-xl">
+        <div class="text-2xl font-black text-amber-400">10-15</div>
+        <div class="text-xs text-zinc-400 mt-1">Pages Per Forensic Dossier</div>
+      </div>
+      <div class="bg-zinc-900/50 border border-zinc-800 p-4 rounded-xl">
+        <div class="text-2xl font-black text-emerald-400">100%</div>
+        <div class="text-xs text-zinc-400 mt-1">Instant Post-Payment Delivery</div>
+      </div>
+      <div class="bg-zinc-900/50 border border-zinc-800 p-4 rounded-xl">
+        <div class="text-2xl font-black text-cyan-400">106+</div>
+        <div class="text-xs text-zinc-400 mt-1">Supercars &amp; Rolex Models</div>
+      </div>
+      <div class="bg-zinc-900/50 border border-zinc-800 p-4 rounded-xl">
+        <div class="text-2xl font-black text-white">14-Day</div>
+        <div class="text-xs text-zinc-400 mt-1">Satisfaction Guarantee</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- 1. HSE ENGLISH VOCATIONAL MOBILE APP & STORE INFRASTRUCTURE -->
+  <!-- ========================================================================= -->
+  <section id="mobile-app" class="max-w-6xl mx-auto px-4 sm:px-6 py-12">
+    <div class="bg-gradient-to-br from-zinc-900 via-zinc-900/90 to-emerald-950/40 border border-emerald-500/30 rounded-3xl p-6 sm:p-10 relative overflow-hidden glow-emerald">
+      <div class="absolute -top-12 -right-12 w-64 h-64 bg-emerald-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+      <div class="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-8">
+        <div class="flex-1">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/20 text-emerald-300 text-xs font-bold tracking-wide uppercase mb-3">
+            📱 Official Mobile Application
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+            HSE English &mdash; Occupational Safety Mobile App
+          </h2>
+          <p class="text-zinc-300 text-sm sm:text-base mt-3 leading-relaxed max-w-2xl">
+            İş Sağlığı ve Güvenliği (İSG) profesyonelleri, NEBOSH ve IOSH sertifika adayları için geliştirilmiş 1.500+ mesleki görsel kart, çok dilli sesli telaffuz ve yapay zeka destekli kaza raporlama motoru.
+          </p>
+
+          <!-- HIGHLIGHT BULLETS -->
+          <div class="grid sm:grid-cols-2 gap-3 mt-6 text-sm text-zinc-300">
+            <div class="flex items-center gap-2">
+              <span class="text-emerald-400 font-bold">✓</span> 1,500+ OHS Technical Terms &amp; Flashcards
+            </div>
+            <div class="flex items-center gap-2">
+              <span class="text-emerald-400 font-bold">✓</span> Native British &amp; US Audio Pronunciations
+            </div>
+            <div class="flex items-center gap-2">
+              <span class="text-emerald-400 font-bold">✓</span> NEBOSH &amp; IOSH Exam Preparation Tests
+            </div>
+            <div class="flex items-center gap-2">
+              <span class="text-emerald-400 font-bold">✓</span> AI Incident &amp; Risk Assessment Practice
+            </div>
+          </div>
+
+          <!-- APP STORE & GOOGLE PLAY DOWNLOAD BADGES (INFRASTRUCTURE READY) -->
+          <div class="mt-8 pt-6 border-t border-zinc-800">
+            <div class="text-xs uppercase tracking-wider text-zinc-400 font-semibold mb-3 flex items-center gap-2">
+              <span>Mobile Store Availability</span>
+              <span class="inline-block bg-amber-500/20 text-amber-300 text-[10px] px-2 py-0.5 rounded font-mono">Store Submissions In Final Review</span>
+            </div>
+            <div class="flex flex-wrap items-center gap-4">
+              <!-- APPLE APP STORE BADGE -->
+              <button onclick="handleStoreClick('ios')" class="group flex items-center gap-3 bg-black hover:bg-zinc-900 border border-zinc-700 hover:border-zinc-500 text-white px-5 py-2.5 rounded-xl transition shadow-lg">
+                <svg class="w-7 h-7 fill-current" viewBox="0 0 24 24">
+                  <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 6.37c.61-.75 1.04-1.8 1.01-2.87-.96.04-2.15.65-2.84 1.44-.54.62-.99 1.67-.92 2.71 1.08.08 2.14-.53 2.75-1.28z"/>
+                </svg>
+                <div class="text-left">
+                  <div class="text-[10px] uppercase text-zinc-400 font-medium tracking-wider">Download on the</div>
+                  <div class="text-sm font-bold tracking-wide">Apple App Store</div>
+                </div>
+              </button>
+
+              <!-- GOOGLE PLAY BADGE -->
+              <button onclick="handleStoreClick('android')" class="group flex items-center gap-3 bg-black hover:bg-zinc-900 border border-zinc-700 hover:border-zinc-500 text-white px-5 py-2.5 rounded-xl transition shadow-lg">
+                <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+                  <path d="M3.609 1.814L13.792 12 3.61 22.186a1.996 1.996 0 01-.61-.397V2.211c.18-.158.39-.293.609-.397zm11.242 11.244l2.585 2.586-12.012 6.945 9.427-9.531zm0-2.116L5.424 1.411 17.436 8.356l-2.585 2.586zm1.488 1.488l3.197 1.849c.866.501.866 1.317 0 1.818l-3.197 1.849-2.37-2.37 2.37-2.146z"/>
+                </svg>
+                <div class="text-left">
+                  <div class="text-[10px] uppercase text-zinc-400 font-medium tracking-wider">Get it on</div>
+                  <div class="text-sm font-bold tracking-wide">Google Play</div>
+                </div>
+              </button>
+
+              <!-- DIRECT WEB APP BUTTON -->
+              <a href="#pricing-hse" class="text-xs font-semibold px-4 py-2.5 rounded-xl bg-emerald-500/20 hover:bg-emerald-500/30 text-emerald-300 border border-emerald-500/40 transition">
+                🌐 Use Web Version Now &rarr;
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- PRICING TIERS FOR HSE ENGLISH -->
+        <div id="pricing-hse" class="w-full lg:w-80 bg-zinc-950/80 border border-zinc-800 rounded-2xl p-6 shadow-2xl flex-shrink-0">
+          <div class="text-xs font-mono uppercase text-emerald-400 font-bold tracking-wider">Mobile App Plans</div>
+          
+          <!-- Monthly Plan -->
+          <div class="mt-4 pb-4 border-b border-zinc-800">
+            <div class="flex justify-between items-baseline">
+              <span class="font-bold text-white">Monthly Pro</span>
+              <span class="text-2xl font-black text-white">$9.99 <span class="text-xs font-normal text-zinc-400">/mo</span></span>
+            </div>
+            <p class="text-xs text-zinc-400 mt-1">Full vocabulary, audio cards &amp; cancel anytime.</p>
+            <a href="mailto:hseenglishdestek@gmail.com?subject=HSE%20English%20Monthly%20Subscription" class="mt-3 block text-center py-2 px-4 rounded-lg bg-zinc-800 hover:bg-zinc-700 text-white text-xs font-bold transition">
+              Subscribe Monthly &mdash; $9.99
+            </a>
+          </div>
+
+          <!-- Lifetime Plan -->
+          <div class="mt-4">
+            <div class="inline-block bg-emerald-500 text-black text-[10px] font-black uppercase px-2 py-0.5 rounded font-mono mb-1">Best Value</div>
+            <div class="flex justify-between items-baseline">
+              <span class="font-bold text-white">Lifetime Pro</span>
+              <span class="text-2xl font-black text-emerald-400">$129.00</span>
+            </div>
+            <p class="text-xs text-zinc-400 mt-1">Single payment, lifetime updates, NEBOSH &amp; IOSH packs.</p>
+            <a href="mailto:hseenglishdestek@gmail.com?subject=HSE%20English%20Lifetime%20Access" class="mt-3 block text-center py-2 px-4 rounded-lg bg-emerald-500 hover:bg-emerald-400 text-black text-xs font-black transition">
+              Get Lifetime Access &mdash; $129
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- 2. SPECIALIZED AI SUITE (CHRONOSPEC, LAMBOSPEC, CABINETSCAN) -->
+  <!-- ========================================================================= -->
+  <section id="apps" class="max-w-6xl mx-auto px-4 sm:px-6 py-12">
+    <div class="text-center max-w-3xl mx-auto mb-12">
+      <span class="text-xs font-mono uppercase tracking-widest text-amber-400 font-bold bg-amber-500/10 px-3 py-1 rounded-full border border-amber-500/20">
+        Commercial Diagnostic Portfolios
+      </span>
+      <h2 class="text-3xl sm:text-5xl font-black text-white tracking-tight mt-3">
+        Institutional AI Diagnostic Engines
+      </h2>
+      <p class="text-zinc-400 text-sm sm:text-base mt-3">
+        Every engine generates a certified 10-page forensic PDF dossier with full market comparables, technical matrices, and negotiation counter-scripts.
+      </p>
+    </div>
+
+    <!-- 3-COLUMN PRODUCT GRID -->
+    <div class="grid lg:grid-cols-3 gap-8">
+
+      <!-- PRODUCT 1: CHRONOSPEC AI ($89) -->
+      <div class="bg-zinc-900/60 border-2 border-amber-500/40 hover:border-amber-500 rounded-3xl p-6 sm:p-8 flex flex-col justify-between transition-all duration-300 glow-gold relative">
+        <div class="absolute -top-3.5 right-6 bg-gradient-to-r from-amber-500 to-amber-600 text-black text-[11px] font-black uppercase px-3 py-1 rounded-full tracking-wider shadow">
+          10-PAGE FORENSIC DOSSIER
+        </div>
+        <div>
+          <div class="w-12 h-12 rounded-2xl bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-2xl mb-4">
+            👑
+          </div>
+          <h3 class="text-2xl font-black text-white tracking-tight">ChronoSpec AI</h3>
+          <p class="text-amber-400 text-xs font-mono font-bold mt-1">Rolex &amp; Luxury Horology Counterfeit Audit</p>
+          
+          <!-- PRICE BADGE -->
+          <div class="mt-5 p-4 rounded-xl bg-zinc-950/70 border border-zinc-800">
+            <div class="text-xs text-zinc-400 uppercase font-semibold">One-Time Dossier Fee</div>
+            <div class="flex items-baseline gap-2 mt-1">
+              <span class="text-3xl font-black text-white">$89.00</span>
+              <span class="text-xs text-zinc-400 font-mono">USD &bull; Instant Delivery</span>
+            </div>
+          </div>
+
+          <!-- FEATURES -->
+          <ul class="mt-6 space-y-3 text-xs sm:text-sm text-zinc-300">
+            <li class="flex items-start gap-2">
+              <span class="text-amber-400 font-bold mt-0.5">✓</span>
+              <span><strong>10-Page Master PDF:</strong> Dial typography, lug chamfers &amp; Calibre movement audit.</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-amber-400 font-bold mt-0.5">✓</span>
+              <span><strong>28 Iconic References:</strong> Submariner, Daytona, GMT-Master II, Deepsea, Nautilus &amp; Royal Oak.</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-amber-400 font-bold mt-0.5">✓</span>
+              <span><strong>Stolen Registry &amp; Escrow:</strong> Interpol/The Watch Register protocols &amp; dealer scripts.</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-amber-400 font-bold mt-0.5">✓</span>
+              <span><strong>14-Day Guarantee:</strong> Complete digital purchase protection.</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- ACTION BUTTONS -->
+        <div class="mt-8 space-y-2.5 pt-6 border-t border-zinc-800/80">
+          <a href="https://whop.com/cabinetscan-ai/chronospec-ai-vip-watch-appraisal-dossier" target="_blank" class="block w-full py-3 px-4 rounded-xl bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-black font-black text-sm text-center shadow-lg transition">
+            Buy ChronoSpec Dossier &mdash; $89.00 &rarr;
+          </a>
+          <a href="chronospec.html" class="block w-full py-2.5 px-4 rounded-xl bg-zinc-800 hover:bg-zinc-700 text-white font-semibold text-xs text-center border border-zinc-700 transition">
+            Launch ChronoSpec Interactive App
+          </a>
+          <a href="sample_chronospec_dossier.pdf" target="_blank" class="block text-center text-xs text-amber-400/80 hover:text-amber-300 font-mono pt-1">
+            📄 Inspect Sample 10-Page PDF
+          </a>
+        </div>
+      </div>
+
+      <!-- PRODUCT 2: LAMBOSPEC AI ($79) -->
+      <div class="bg-zinc-900/60 border-2 border-amber-500/40 hover:border-amber-500 rounded-3xl p-6 sm:p-8 flex flex-col justify-between transition-all duration-300 glow-gold relative">
+        <div class="absolute -top-3.5 right-6 bg-gradient-to-r from-amber-500 to-yellow-600 text-black text-[11px] font-black uppercase px-3 py-1 rounded-full tracking-wider shadow">
+          10-PAGE PRE-PURCHASE AUDIT
+        </div>
+        <div>
+          <div class="w-12 h-12 rounded-2xl bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-2xl mb-4">
+            🏎️
+          </div>
+          <h3 class="text-2xl font-black text-white tracking-tight">LamboSpec AI</h3>
+          <p class="text-amber-400 text-xs font-mono font-bold mt-1">Lamborghini Pre-Purchase Negotiation Intelligence</p>
+          
+          <!-- PRICE BADGE -->
+          <div class="mt-5 p-4 rounded-xl bg-zinc-950/70 border border-zinc-800">
+            <div class="text-xs text-zinc-400 uppercase font-semibold">One-Time Audit Fee</div>
+            <div class="flex items-baseline gap-2 mt-1">
+              <span class="text-3xl font-black text-white">$79.00</span>
+              <span class="text-xs text-zinc-400 font-mono">USD &bull; Instant Delivery</span>
+            </div>
+          </div>
+
+          <!-- FEATURES -->
+          <ul class="mt-6 space-y-3 text-xs sm:text-sm text-zinc-300">
+            <li class="flex items-start gap-2">
+              <span class="text-amber-400 font-bold mt-0.5">✓</span>
+              <span><strong>10-Page Full Diagnostic Report:</strong> Carbon ceramic rotor oxidation &amp; clutch snap analysis.</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-amber-400 font-bold mt-0.5">✓</span>
+              <span><strong>106 Registered Models:</strong> From 1963 350GT to Revuelto V12 &amp; Temerario V8 Twin-Turbo.</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-amber-400 font-bold mt-0.5">✓</span>
+              <span><strong>Dealer Negotiation Script:</strong> Step-by-step counter-offers to save $7,000&ndash;$25,000.</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-amber-400 font-bold mt-0.5">✓</span>
+              <span><strong>14-Day Guarantee:</strong> Complete digital purchase protection.</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- ACTION BUTTONS -->
+        <div class="mt-8 space-y-2.5 pt-6 border-t border-zinc-800/80">
+          <a href="https://whop.com/cabinetscan-ai/lambospec-ai-vip-pre-purchase-dossier" target="_blank" class="block w-full py-3 px-4 rounded-xl bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-black font-black text-sm text-center shadow-lg transition">
+            Buy LamboSpec Dossier &mdash; $79.00 &rarr;
+          </a>
+          <a href="lambospec.html" class="block w-full py-2.5 px-4 rounded-xl bg-zinc-800 hover:bg-zinc-700 text-white font-semibold text-xs text-center border border-zinc-700 transition">
+            Launch LamboSpec Interactive App
+          </a>
+          <a href="sample_report.pdf" target="_blank" class="block text-center text-xs text-amber-400/80 hover:text-amber-300 font-mono pt-1">
+            📄 Inspect Sample 10-Page PDF
+          </a>
+        </div>
+      </div>
+
+      <!-- PRODUCT 3: CABINETSCAN AI ($99) -->
+      <div class="bg-zinc-900/60 border-2 border-emerald-500/40 hover:border-emerald-500 rounded-3xl p-6 sm:p-8 flex flex-col justify-between transition-all duration-300 glow-emerald relative">
+        <div class="absolute -top-3.5 right-6 bg-gradient-to-r from-emerald-500 to-teal-600 text-black text-[11px] font-black uppercase px-3 py-1 rounded-full tracking-wider shadow">
+          10-PAGE CLINICAL DOSSIER
+        </div>
+        <div>
+          <div class="w-12 h-12 rounded-2xl bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-2xl mb-4">
+            💊
+          </div>
+          <h3 class="text-2xl font-black text-white tracking-tight">CabinetScan AI</h3>
+          <p class="text-emerald-400 text-xs font-mono font-bold mt-1">Multi-Drug &amp; Medical Wearable Conflict Engine</p>
+          
+          <!-- PRICE BADGE -->
+          <div class="mt-5 p-4 rounded-xl bg-zinc-950/70 border border-zinc-800">
+            <div class="text-xs text-zinc-400 uppercase font-semibold">One-Time Clinical Fee</div>
+            <div class="flex items-baseline gap-2 mt-1">
+              <span class="text-3xl font-black text-white">$99.00</span>
+              <span class="text-xs text-zinc-400 font-mono">USD &bull; Instant Delivery</span>
+            </div>
+          </div>
+
+          <!-- FEATURES -->
+          <ul class="mt-6 space-y-3 text-xs sm:text-sm text-zinc-300">
+            <li class="flex items-start gap-2">
+              <span class="text-emerald-400 font-bold mt-0.5">✓</span>
+              <span><strong>10-Page Pharmacovigilance Audit:</strong> CYP450 liver pathway interactions &amp; dosage hazards.</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-emerald-400 font-bold mt-0.5">✓</span>
+              <span><strong>Cross-Border Brand Equivalence:</strong> FDA (US), EMA (EU), MHRA (UK) &amp; TITCK matching.</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-emerald-400 font-bold mt-0.5">✓</span>
+              <span><strong>10 Wearable Device Conflict Rules:</strong> CGM sensors, insulin pumps &amp; smartwatch PPG optics.</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-emerald-400 font-bold mt-0.5">✓</span>
+              <span><strong>14-Day Guarantee:</strong> Complete digital purchase protection.</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- ACTION BUTTONS -->
+        <div class="mt-8 space-y-2.5 pt-6 border-t border-zinc-800/80">
+          <a href="https://whop.com/checkout/plan_ikEY1bP1Pk7di" target="_blank" class="block w-full py-3 px-4 rounded-xl bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-400 hover:to-teal-400 text-black font-black text-sm text-center shadow-lg transition">
+            Buy CabinetScan Dossier &mdash; $99.00 &rarr;
+          </a>
+          <a href="cabinetscan.html" class="block w-full py-2.5 px-4 rounded-xl bg-zinc-800 hover:bg-zinc-700 text-white font-semibold text-xs text-center border border-zinc-700 transition">
+            Launch CabinetScan Interactive App
+          </a>
+          <a href="sample_cabinetscan_dossier.pdf" target="_blank" class="block text-center text-xs text-emerald-400/80 hover:text-emerald-300 font-mono pt-1">
+            📄 Inspect Sample 10-Page PDF
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- MASTER PRICING SUMMARY BANNER -->
+  <section class="max-w-5xl mx-auto px-4 sm:px-6 py-8">
+    <div class="bg-zinc-900/40 border border-zinc-800 rounded-2xl p-6 sm:p-8 flex flex-col md:flex-row items-center justify-between gap-6">
+      <div>
+        <h4 class="text-xl font-bold text-white">Compare All Plans &amp; Corporate Invoicing</h4>
+        <p class="text-zinc-400 text-xs sm:text-sm mt-1">Review the complete side-by-side technical matrix, Whop merchant protections, and corporate wire transfer options.</p>
+      </div>
+      <a href="pricing.html" class="px-6 py-3 rounded-xl bg-zinc-800 hover:bg-zinc-700 text-white font-bold text-sm whitespace-nowrap border border-zinc-700 transition">
+        Open Master Pricing Table &rarr;
+      </a>
+    </div>
+  </section>
+
+  <!-- SUPPORT & FOOTER -->
+  <footer class="border-t border-zinc-800 bg-zinc-950/90 mt-16 pt-12 pb-16">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="grid md:grid-cols-4 gap-8 pb-10 border-b border-zinc-800">
+        <div class="md:col-span-2">
+          <div class="flex items-center gap-2 mb-3">
+            <span class="font-extrabold text-white text-lg">HSE English &amp; AI Intelligence</span>
+          </div>
+          <p class="text-xs text-zinc-400 leading-relaxed max-w-sm">
+            Institutional-grade software solutions for occupational safety education, automotive defect forensics, and luxury horology appraisal.
+          </p>
+          <div class="mt-4 text-xs text-zinc-500 font-mono">
+            Merchant of Record: Whop &bull; 256-Bit SSL Encrypted &bull; Instant Digital Delivery
+          </div>
+        </div>
+
+        <div>
+          <h5 class="text-xs font-mono uppercase text-zinc-300 font-bold mb-3 tracking-wider">AI Engines</h5>
+          <ul class="space-y-2 text-xs text-zinc-400">
+            <li><a href="chronospec.html" class="hover:text-amber-400 transition">ChronoSpec AI ($89)</a></li>
+            <li><a href="lambospec.html" class="hover:text-amber-400 transition">LamboSpec AI ($79)</a></li>
+            <li><a href="cabinetscan.html" class="hover:text-emerald-400 transition">CabinetScan AI ($99)</a></li>
+            <li><a href="#mobile-app" class="hover:text-white transition">HSE English App ($9.99/mo)</a></li>
+          </ul>
+        </div>
+
+        <div id="destek">
+          <h5 class="text-xs font-mono uppercase text-zinc-300 font-bold mb-3 tracking-wider">Support &amp; Legal</h5>
+          <ul class="space-y-2 text-xs text-zinc-400">
+            <li><a href="pricing.html" class="hover:text-white transition">All Pricing &amp; Plans</a></li>
+            <li><a href="terms.html" class="hover:text-white transition">Terms of Service</a></li>
+            <li><a href="privacy.html" class="hover:text-white transition">Privacy Policy</a></li>
+            <li><a href="refund.html" class="hover:text-white transition">Refund Policy (14-Day)</a></li>
+            <li class="pt-2 text-zinc-300">
+              <span class="text-[11px] text-zinc-500 block">Official Support:</span>
+              <a href="mailto:hseenglishdestek@gmail.com" class="text-amber-400 hover:underline font-mono">hseenglishdestek@gmail.com</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="mt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-zinc-500 gap-4">
+        <div>&copy; 2026 HSE English &middot; hseenglish.app &middot; All rights reserved worldwide.</div>
+        <div class="flex items-center gap-4">
+          <span>Server Status: <strong class="text-emerald-400">Online</strong></span>
+          <span>SSL: <strong class="text-emerald-400">A+ Verified</strong></span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========================================================================= -->
+  <!-- STORE NOTIFICATION MODAL (INFRASTRUCTURE FOR APP STORE & GOOGLE PLAY) -->
+  <!-- ========================================================================= -->
+  <div id="storeModal" class="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+    <div class="bg-zinc-900 border border-zinc-800 rounded-2xl max-w-md w-full p-6 shadow-2xl relative">
+      <button onclick="closeStoreModal()" class="absolute top-4 right-4 text-zinc-400 hover:text-white text-lg font-bold">&times;</button>
+      
+      <div class="w-12 h-12 rounded-xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center text-2xl mb-4" id="modalStoreIcon">
+        📱
+      </div>
+
+      <h3 class="text-xl font-black text-white" id="modalStoreTitle">Store Launch in Progress</h3>
+      <p class="text-zinc-400 text-xs sm:text-sm mt-2 leading-relaxed" id="modalStoreDesc">
+        HSE English mobile application is currently going through final store certification on <span id="modalStoreName" class="text-emerald-400 font-bold">App Store</span>. 
+      </p>
+
+      <div class="mt-4 p-3 bg-zinc-950 rounded-xl border border-zinc-800 text-xs text-zinc-300">
+        💡 <strong>Instant Access:</strong> You can use the web edition immediately right now on any phone browser, or enter your email below to be notified the exact hour it goes live on the store!
+      </div>
+
+      <form onsubmit="handleWaitlistSubmit(event)" class="mt-5 space-y-3">
+        <input type="email" id="waitlistEmail" required placeholder="Enter your email address" class="w-full px-4 py-2.5 rounded-lg bg-zinc-950 border border-zinc-800 text-white text-xs sm:text-sm focus:outline-none focus:border-emerald-500">
+        <button type="submit" class="w-full py-2.5 rounded-lg bg-emerald-500 hover:bg-emerald-400 text-black font-black text-xs sm:text-sm transition shadow">
+          Notify Me When Live &rarr;
+        </button>
+      </form>
+      <div id="waitlistSuccess" class="hidden mt-3 text-xs text-emerald-400 text-center font-semibold">
+        ✓ Thank you! You'll be the first to know the moment it launches!
+      </div>
     </div>
   </div>
 
-  <h2 id="pricing">HSE English App Plans</h2>
-  <p class="muted">Learning packages for individual safety professionals and certification students.</p>
+  <!-- STORE REDIRECTION & CONFIGURATION SCRIPT -->
+  <script>
+    // ============================================================================
+    // APP STORE & GOOGLE PLAY STORE CONFIGURATION
+    // When the application is approved by Apple and Google, paste the live store URLs below:
+    // ============================================================================
+    window.HSE_APP_CONFIG = {
+      iosAppStoreUrl: "",     // Example: "https://apps.apple.com/app/hse-english/id123456789"
+      googlePlayUrl: "",      // Example: "https://play.google.com/store/apps/details?id=com.hseenglish.app"
+      telegramBotUrl: "https://t.me/Pythonselenyum216_bot" // Connected Telegram Bot
+    };
 
-  <div class="pricing-grid">
-    <div class="pricing-card">
-      <h3>Monthly Pro</h3>
-      <div class="price">$9.99 <span>/ month</span></div>
-      <ul>
-        <li>Full access to 1,500+ HSE terms &amp; cards</li>
-        <li>Spoken native audio pronunciation</li>
-        <li>Interactive quizzes &amp; flashcards</li>
-        <li>Cancel anytime</li>
-      </ul>
-      <a href="#destek" class="btn">Get Started</a>
-    </div>
+    function handleStoreClick(platform) {
+      if (platform === 'ios') {
+        if (window.HSE_APP_CONFIG.iosAppStoreUrl && window.HSE_APP_CONFIG.iosAppStoreUrl.startsWith('http')) {
+          window.open(window.HSE_APP_CONFIG.iosAppStoreUrl, '_blank');
+        } else {
+          openStoreModal('Apple App Store', '🍏');
+        }
+      } else if (platform === 'android') {
+        if (window.HSE_APP_CONFIG.googlePlayUrl && window.HSE_APP_CONFIG.googlePlayUrl.startsWith('http')) {
+          window.open(window.HSE_APP_CONFIG.googlePlayUrl, '_blank');
+        } else {
+          openStoreModal('Google Play Store', '🤖');
+        }
+      }
+    }
 
-    <div class="pricing-card featured">
-      <span class="badge">LIFETIME ACCESS</span>
-      <h3>Lifetime Pro</h3>
-      <div class="price">$129.00 <span>one-time payment</span></div>
-      <ul>
-        <li>Everything in Monthly Pro</li>
-        <li>Lifetime updates &amp; new modules</li>
-        <li>NEBOSH &amp; IOSH exam preparation sets</li>
-        <li>AI incident report &amp; speech practice</li>
-        <li>One-time payment, no recurring fees</li>
-      </ul>
-      <a href="#destek" class="btn">Get Lifetime Access</a>
-    </div>
-  </div>
+    function openStoreModal(storeName, icon) {
+      document.getElementById('modalStoreName').innerText = storeName;
+      document.getElementById('modalStoreTitle').innerText = `${storeName} Launch Review`;
+      document.getElementById('modalStoreIcon').innerText = icon;
+      document.getElementById('storeModal').classList.remove('hidden');
+    }
 
-  <div class="card" id="destek">
-    <strong>Destek &amp; Faturalandırma / Support &amp; Billing</strong><br>
-    Soru, satın alma ve talepleriniz için / For questions, billing &amp; requests:<br>
-    <a href="mailto:hseenglishdestek@gmail.com">hseenglishdestek@gmail.com</a>
-  </div>
+    function closeStoreModal() {
+      document.getElementById('storeModal').classList.add('hidden');
+      document.getElementById('waitlistSuccess').classList.add('hidden');
+    }
 
-  <nav>
-    <a href="chronospec.html"><strong>ChronoSpec AI (Rolex Appraisal &amp; Counterfeit Engine)</strong></a>
-    <a href="lambospec.html"><strong>LamboSpec AI (Supercar Pre-Purchase Inspection)</strong></a>
-    <a href="cabinetscan.html"><strong>CabinetScan AI (Medicine &amp; Supplement Conflict Scanner)</strong></a>
-    <a href="#pricing">HSE English Plans</a>
-    <a href="terms.html">Kullanım Koşulları / Terms of Service</a>
-    <a href="privacy.html">Gizlilik Politikası / Privacy Policy</a>
-    <a href="refund.html">İade Politikası / Refund Policy</a>
-  </nav>
+    function handleWaitlistSubmit(e) {
+      e.preventDefault();
+      const email = document.getElementById('waitlistEmail').value;
+      if (!email) return;
+      // Store locally or send alert
+      try {
+        const list = JSON.parse(localStorage.getItem('hse_app_waitlist') || '[]');
+        list.push({ email, date: new Date().toISOString() });
+        localStorage.setItem('hse_app_waitlist', JSON.stringify(list));
+      } catch (err) {}
+      document.getElementById('waitlistSuccess').classList.remove('hidden');
+      setTimeout(() => {
+        closeStoreModal();
+      }, 2500);
+    }
 
-  <hr>
-  <p class="muted">&copy; 2026 HSE English &middot; hseenglish.app &middot; All rights reserved.</p>
-</main>
+    // Close modal on escape key
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeStoreModal();
+    });
+  </script>
+
 </body>
 </html>

@@ -1,53 +1,226 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pricing & Plans — LamboSpec AI</title>
+  <title>Pricing & Plans — HSE English & AI Intelligence Suite</title>
+  <meta name="description" content="Transparent pricing for institutional-grade diagnostic engines, luxury appraisal dossiers, and occupational health English learning.">
+  <link rel="icon" type="image/png" href="logo.png">
   <script src="https://cdn.tailwindcss.com"></script>
-  <style>body { background-color: #0b0d11; color: #d1d5db; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }</style>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              gold: '#f59e0b',
+              emerald: '#10b981',
+              cyan: '#06b6d4',
+              dark: '#080b10'
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body { background-color: #080b10; color: #e2e8f0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+    .glow-gold { box-shadow: 0 0 30px -5px rgba(245, 158, 11, 0.15); }
+    .glow-emerald { box-shadow: 0 0 30px -5px rgba(16, 185, 129, 0.15); }
+  </style>
 </head>
-<body class="min-h-screen py-16 px-6 max-w-4xl mx-auto">
-  <div class="mb-8">
-    <a href="lambospec.html" class="text-amber-500 hover:text-amber-400 font-bold text-sm tracking-wide uppercase">&larr; Back to LamboSpec AI</a>
-    <h1 class="text-4xl font-extrabold text-white mt-4 tracking-tight">Pricing & Plans</h1>
-    <p class="text-zinc-500 text-sm mt-2">Clear, transparent, one-time pricing. No recurring subscriptions.</p>
+<body class="min-h-screen py-12 px-4 sm:px-6 max-w-6xl mx-auto">
+  
+  <!-- BACK NAVIGATION -->
+  <div class="mb-10 flex flex-wrap items-center justify-between gap-4 border-b border-zinc-800/80 pb-6">
+    <a href="index.html" class="inline-flex items-center gap-2 text-zinc-400 hover:text-white font-bold text-xs uppercase tracking-wider transition">
+      &larr; Return to HSE English Main Portal
+    </a>
+    <div class="text-xs text-zinc-500 font-mono">
+      Official Commercial Price Schedule &bull; 2026
+    </div>
   </div>
 
-  <div class="grid md:grid-cols-2 gap-8 mt-10">
-    <div class="bg-zinc-900/60 border border-zinc-800 p-8 rounded-2xl">
-      <div class="text-xs uppercase tracking-widest text-zinc-400 font-mono font-bold mb-2">Free Instant Preview</div>
-      <div class="text-3xl font-extrabold text-white">$0</div>
-      <p class="text-zinc-400 text-sm mt-3">Basic vehicle overview and high-level market summary for all 106 Lamborghini production models.</p>
-      <ul class="mt-6 space-y-3 text-sm text-zinc-300">
-        <li class="flex items-center gap-2"><span class="text-emerald-400 font-bold">✓</span> Basic model specifications & timeline</li>
-        <li class="flex items-center gap-2"><span class="text-emerald-400 font-bold">✓</span> General production numbers</li>
-        <li class="flex items-center gap-2"><span class="text-emerald-400 font-bold">✓</span> Public defect alerts summary</li>
-      </ul>
-      <a href="lambospec.html#analyze-tool" class="block text-center mt-8 py-3 px-6 rounded-lg bg-zinc-800 hover:bg-zinc-700 text-white font-semibold text-sm transition">Launch Free Preview</a>
-    </div>
+  <!-- HEADER -->
+  <div class="text-center max-w-3xl mx-auto mb-14">
+    <span class="text-xs font-mono uppercase tracking-widest text-amber-400 font-bold bg-amber-500/10 px-3 py-1 rounded-full border border-amber-500/20">
+      Direct Institutional Pricing
+    </span>
+    <h1 class="text-4xl sm:text-5xl font-black text-white mt-4 tracking-tight">
+      Transparent, One-Time Dossier Pricing
+    </h1>
+    <p class="text-zinc-400 text-sm sm:text-base mt-3 max-w-xl mx-auto">
+      No recurring hidden subscriptions. Instant certified 10-page forensic PDF generation delivered immediately after payment.
+    </p>
+  </div>
 
-    <div class="bg-gradient-to-b from-amber-500/10 to-transparent border-2 border-amber-500/50 p-8 rounded-2xl relative shadow-[0_0_40px_rgba(245,158,11,0.15)]">
-      <div class="absolute -top-3.5 right-6 bg-amber-500 text-black text-xs font-black uppercase px-3 py-1 rounded-full tracking-wide">Most Popular</div>
-      <div class="text-xs uppercase tracking-widest text-amber-400 font-mono font-bold mb-2">VIP Full Diagnostic Dossier</div>
-      <div class="flex items-baseline gap-2">
-        <span class="text-4xl font-extrabold text-white">$79</span>
-        <span class="text-zinc-400 text-sm">USD / one-time payment</span>
+  <!-- ALL 3 AI SUITE PRICING CARDS -->
+  <div class="grid lg:grid-cols-3 gap-8">
+
+    <!-- 1. CHRONOSPEC AI ($89) -->
+    <div class="bg-zinc-900/60 border-2 border-amber-500/40 hover:border-amber-500 rounded-3xl p-6 sm:p-8 flex flex-col justify-between glow-gold transition">
+      <div>
+        <div class="flex items-center justify-between mb-4">
+          <span class="text-2xl">👑</span>
+          <span class="bg-amber-500 text-black text-[10px] font-black uppercase px-2.5 py-0.5 rounded-full font-mono">Rolex Intelligence</span>
+        </div>
+        <h3 class="text-2xl font-black text-white">ChronoSpec AI</h3>
+        <p class="text-zinc-400 text-xs mt-1">Luxury Watch Appraisal &amp; Counterfeit Forensics</p>
+        
+        <div class="mt-6 flex items-baseline gap-2">
+          <span class="text-4xl font-black text-white">$89.00</span>
+          <span class="text-xs text-zinc-400 font-mono">USD / one-time</span>
+        </div>
+
+        <ul class="mt-6 space-y-3 text-xs sm:text-sm text-zinc-300">
+          <li class="flex items-center gap-2"><span class="text-amber-400 font-bold">✓</span> <strong>10-Page Certified PDF Dossier</strong></li>
+          <li class="flex items-center gap-2"><span class="text-amber-400 font-bold">✓</span> Dial &amp; Lug Micro-Tolerance Verification</li>
+          <li class="flex items-center gap-2"><span class="text-amber-400 font-bold">✓</span> Calibre 4130/3235 Movement Audit</li>
+          <li class="flex items-center gap-2"><span class="text-amber-400 font-bold">✓</span> Stolen Registry &amp; Escrow Protocols</li>
+          <li class="flex items-center gap-2"><span class="text-amber-400 font-bold">✓</span> 14-Day Money-Back Guarantee</li>
+        </ul>
       </div>
-      <p class="text-zinc-400 text-sm mt-3">Comprehensive 10-page forensic audit, mechanical fault matrix, and dealer negotiation counter-script.</p>
-      <ul class="mt-6 space-y-3 text-sm text-zinc-300">
-        <li class="flex items-center gap-2"><span class="text-amber-400 font-bold">✓</span> 10-Page High-Resolution Forensic PDF Report</li>
-        <li class="flex items-center gap-2"><span class="text-amber-400 font-bold">✓</span> Real-World Auction Valuation Comps (BaT, RM Sotheby's)</li>
-        <li class="flex items-center gap-2"><span class="text-amber-400 font-bold">✓</span> Factory Technical Service Bulletins (TSB) & Defect Matrix</li>
-        <li class="flex items-center gap-2"><span class="text-amber-400 font-bold">✓</span> Step-by-Step Dealer Negotiation Counter-Script</li>
-        <li class="flex items-center gap-2"><span class="text-amber-400 font-bold">✓</span> 14-Day Money-Back Guarantee</li>
-      </ul>
-      <a href="lambospec.html#analyze-tool" class="block text-center mt-8 py-3 px-6 rounded-lg bg-amber-500 hover:bg-amber-400 text-black font-extrabold text-sm transition shadow-lg shadow-amber-500/20">Generate VIP Dossier — $79</a>
+
+      <div class="mt-8 space-y-2.5 pt-6 border-t border-zinc-800">
+        <a href="https://whop.com/cabinetscan-ai/chronospec-ai-vip-watch-appraisal-dossier" target="_blank" class="block w-full py-3 px-4 rounded-xl bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-black font-black text-xs sm:text-sm text-center shadow-lg transition">
+          Purchase ChronoSpec Dossier &mdash; $89.00
+        </a>
+        <a href="chronospec.html" class="block w-full py-2 px-4 rounded-xl bg-zinc-800 hover:bg-zinc-700 text-zinc-200 text-xs text-center font-medium transition">
+          Open Web App &rarr;
+        </a>
+        <a href="sample_chronospec_dossier.pdf" target="_blank" class="block text-center text-xs text-amber-400/80 hover:text-amber-300 font-mono">
+          Preview 10-Page PDF
+        </a>
+      </div>
+    </div>
+
+    <!-- 2. LAMBOSPEC AI ($79) -->
+    <div class="bg-zinc-900/60 border-2 border-amber-500/40 hover:border-amber-500 rounded-3xl p-6 sm:p-8 flex flex-col justify-between glow-gold transition">
+      <div>
+        <div class="flex items-center justify-between mb-4">
+          <span class="text-2xl">🏎️</span>
+          <span class="bg-amber-500 text-black text-[10px] font-black uppercase px-2.5 py-0.5 rounded-full font-mono">Supercar Audit</span>
+        </div>
+        <h3 class="text-2xl font-black text-white">LamboSpec AI</h3>
+        <p class="text-zinc-400 text-xs mt-1">Supercar Pre-Purchase Audit &amp; Negotiation</p>
+        
+        <div class="mt-6 flex items-baseline gap-2">
+          <span class="text-4xl font-black text-white">$79.00</span>
+          <span class="text-xs text-zinc-400 font-mono">USD / one-time</span>
+        </div>
+
+        <ul class="mt-6 space-y-3 text-xs sm:text-sm text-zinc-300">
+          <li class="flex items-center gap-2"><span class="text-amber-400 font-bold">✓</span> <strong>10-Page Pre-Purchase PDF Report</strong></li>
+          <li class="flex items-center gap-2"><span class="text-amber-400 font-bold">✓</span> 106 Registered Lamborghini Models</li>
+          <li class="flex items-center gap-2"><span class="text-amber-400 font-bold">✓</span> Carbon Ceramic Rotor &amp; Clutch Analysis</li>
+          <li class="flex items-center gap-2"><span class="text-amber-400 font-bold">✓</span> Dealer Negotiation Counter-Scripts</li>
+          <li class="flex items-center gap-2"><span class="text-amber-400 font-bold">✓</span> 14-Day Money-Back Guarantee</li>
+        </ul>
+      </div>
+
+      <div class="mt-8 space-y-2.5 pt-6 border-t border-zinc-800">
+        <a href="https://whop.com/cabinetscan-ai/lambospec-ai-vip-pre-purchase-dossier" target="_blank" class="block w-full py-3 px-4 rounded-xl bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-black font-black text-xs sm:text-sm text-center shadow-lg transition">
+          Purchase LamboSpec Dossier &mdash; $79.00
+        </a>
+        <a href="lambospec.html" class="block w-full py-2 px-4 rounded-xl bg-zinc-800 hover:bg-zinc-700 text-zinc-200 text-xs text-center font-medium transition">
+          Open Web App &rarr;
+        </a>
+        <a href="sample_report.pdf" target="_blank" class="block text-center text-xs text-amber-400/80 hover:text-amber-300 font-mono">
+          Preview 10-Page PDF
+        </a>
+      </div>
+    </div>
+
+    <!-- 3. CABINETSCAN AI ($99) -->
+    <div class="bg-zinc-900/60 border-2 border-emerald-500/40 hover:border-emerald-500 rounded-3xl p-6 sm:p-8 flex flex-col justify-between glow-emerald transition">
+      <div>
+        <div class="flex items-center justify-between mb-4">
+          <span class="text-2xl">💊</span>
+          <span class="bg-emerald-500 text-black text-[10px] font-black uppercase px-2.5 py-0.5 rounded-full font-mono">Clinical Safety</span>
+        </div>
+        <h3 class="text-2xl font-black text-white">CabinetScan AI</h3>
+        <p class="text-zinc-400 text-xs mt-1">Multi-Drug &amp; Device Conflict Pharmacovigilance</p>
+        
+        <div class="mt-6 flex items-baseline gap-2">
+          <span class="text-4xl font-black text-white">$99.00</span>
+          <span class="text-xs text-zinc-400 font-mono">USD / one-time</span>
+        </div>
+
+        <ul class="mt-6 space-y-3 text-xs sm:text-sm text-zinc-300">
+          <li class="flex items-center gap-2"><span class="text-emerald-400 font-bold">✓</span> <strong>10-Page Pharmacovigilance Dossier</strong></li>
+          <li class="flex items-center gap-2"><span class="text-emerald-400 font-bold">✓</span> Global FDA / EMA / MHRA / TITCK Brands</li>
+          <li class="flex items-center gap-2"><span class="text-emerald-400 font-bold">✓</span> CYP450 Liver Pathway Interaction Matrix</li>
+          <li class="flex items-center gap-2"><span class="text-emerald-400 font-bold">✓</span> 10 Medical Wearable Conflict Rules</li>
+          <li class="flex items-center gap-2"><span class="text-emerald-400 font-bold">✓</span> 14-Day Money-Back Guarantee</li>
+        </ul>
+      </div>
+
+      <div class="mt-8 space-y-2.5 pt-6 border-t border-zinc-800">
+        <a href="https://whop.com/checkout/plan_ikEY1bP1Pk7di" target="_blank" class="block w-full py-3 px-4 rounded-xl bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-400 hover:to-teal-400 text-black font-black text-xs sm:text-sm text-center shadow-lg transition">
+          Purchase CabinetScan Dossier &mdash; $99.00
+        </a>
+        <a href="cabinetscan.html" class="block w-full py-2 px-4 rounded-xl bg-zinc-800 hover:bg-zinc-700 text-zinc-200 text-xs text-center font-medium transition">
+          Open Web App &rarr;
+        </a>
+        <a href="sample_cabinetscan_dossier.pdf" target="_blank" class="block text-center text-xs text-emerald-400/80 hover:text-emerald-300 font-mono">
+          Preview 10-Page PDF
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- HSE ENGLISH MOBILE APP PRICING SECTION -->
+  <div class="mt-16 bg-gradient-to-r from-zinc-900 to-zinc-900/60 border border-zinc-800 rounded-3xl p-8 sm:p-10">
+    <div class="flex flex-col lg:flex-row items-center justify-between gap-8">
+      <div>
+        <span class="text-xs font-mono uppercase tracking-widest text-emerald-400 font-bold bg-emerald-500/10 px-3 py-1 rounded-full border border-emerald-500/20">
+          Mobile Training Plans
+        </span>
+        <h2 class="text-3xl font-extrabold text-white mt-3">HSE English Occupational Safety App</h2>
+        <p class="text-zinc-400 text-sm mt-2 max-w-xl">
+          Complete vocabulary, image cards, and British/American native audio pronunciation for NEBOSH, IOSH, and safety inspectors.
+        </p>
+      </div>
+
+      <div class="flex flex-col sm:flex-row gap-4 w-full lg:w-auto">
+        <!-- MONTHLY -->
+        <div class="bg-zinc-950 p-6 rounded-2xl border border-zinc-800 min-w-[220px]">
+          <div class="text-xs text-zinc-400 font-semibold uppercase">Monthly Pro</div>
+          <div class="text-3xl font-black text-white mt-1">$9.99 <span class="text-xs font-normal text-zinc-400">/mo</span></div>
+          <p class="text-xs text-zinc-400 mt-2">Full access, cancel anytime.</p>
+          <a href="mailto:hseenglishdestek@gmail.com?subject=HSE%20English%20Monthly%20Subscription" class="mt-4 block text-center py-2 px-4 rounded-lg bg-zinc-800 hover:bg-zinc-700 text-white text-xs font-bold transition">
+            Subscribe &mdash; $9.99
+          </a>
+        </div>
+
+        <!-- LIFETIME -->
+        <div class="bg-gradient-to-b from-emerald-950/40 to-zinc-950 p-6 rounded-2xl border-2 border-emerald-500/50 min-w-[240px]">
+          <div class="text-xs text-emerald-400 font-black uppercase">Lifetime Pro</div>
+          <div class="text-3xl font-black text-emerald-400 mt-1">$129.00</div>
+          <p class="text-xs text-zinc-400 mt-2">One-time payment, all future updates.</p>
+          <a href="mailto:hseenglishdestek@gmail.com?subject=HSE%20English%20Lifetime%20Access" class="mt-4 block text-center py-2 px-4 rounded-lg bg-emerald-500 hover:bg-emerald-400 text-black text-xs font-black transition">
+            Get Lifetime &mdash; $129.00
+          </a>
+        </div>
+      </div>
     </div>
   </div>
 
-  <div class="mt-12 bg-zinc-900/40 border border-zinc-800 p-6 rounded-xl text-xs text-zinc-400 leading-relaxed">
-    <p><strong>Merchant of Record Notice:</strong> All payments are securely processed by Creem.io / Merchant of Record. Paddle provides fraud prevention, local tax handling (VAT/Sales tax), and instant digital receipt fulfillment.</p>
+  <!-- MERCHANT OF RECORD & GUARANTEE -->
+  <div class="mt-14 bg-zinc-900/40 border border-zinc-800/80 p-6 rounded-2xl text-xs text-zinc-400 leading-relaxed max-w-4xl mx-auto text-center">
+    <p>
+      <strong>Merchant of Record &amp; Security:</strong> All digital transactions are processed securely via Whop. 256-bit SSL encryption safeguards your checkout. All one-time purchases include our <strong>14-Day Money-Back Guarantee</strong> under our <a href="refund.html" class="text-amber-400 hover:underline">Refund Policy</a>.
+    </p>
+    <p class="mt-2 text-zinc-500">
+      Need a corporate invoice or wire transfer? Contact: <a href="mailto:hseenglishdestek@gmail.com" class="text-zinc-300 hover:underline font-mono">hseenglishdestek@gmail.com</a>
+    </p>
   </div>
+
+  <footer class="mt-16 pt-8 border-t border-zinc-800/80 text-center text-xs text-zinc-500">
+    &copy; 2026 HSE English &middot; hseenglish.app &middot; All rights reserved.
+  </footer>
+
 </body>
 </html>
