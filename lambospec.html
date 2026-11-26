@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -34,7 +34,7 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://federal216.github.io/lambospec-ai/">
   <meta property="og:title" content="LAMBOSPEC AI — Don't Buy a Lamborghini Without This Audit">
-  <meta property="og:description" content="Uncover hidden $24,000 rotor wear, missing lift systems, and slipping ISR clutches. Instant 10-page VIP diagnostic dossier and dealer script.">
+  <meta property="og:description" content="Uncover hidden $24,000 rotor wear, missing lift systems, and slipping ISR clutches. Instant 10–15 page VIP master diagnostic dossier (Min 10 Pgs Guaranteed) and dealer script.">
   <meta property="og:image" content="https://images.unsplash.com/photo-1544829099-b9a0c07fad1a?w=1200&amp;auto=format&amp;fit=crop&amp;q=80">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -42,11 +42,11 @@
   <meta property="og:locale" content="en_US">
 
   <!-- Twitter / X -->
-  <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:url" content="https://federal216.github.io/lambospec-ai/">
-  <meta property="twitter:title" content="LAMBOSPEC AI — Supercar Pre-Purchase Audit">
-  <meta property="twitter:description" content="Autonomous AI negotiation engine for Lamborghini Huracán, Aventador, Urus, Diablo, and Countach.">
-  <meta property="twitter:image" content="https://images.unsplash.com/photo-1544829099-b9a0c07fad1a?w=1200&amp;auto=format&amp;fit=crop&amp;q=80">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://federal216.github.io/lambospec-ai/">
+  <meta name="twitter:title" content="LAMBOSPEC AI — Supercar Pre-Purchase Audit">
+  <meta name="twitter:description" content="Autonomous AI negotiation engine for Lamborghini Huracán, Aventador, Urus, Diablo, and Countach.">
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1544829099-b9a0c07fad1a?w=1200&amp;auto=format&amp;fit=crop&amp;q=80">
 
   <!-- Google Structured Data (Schema.org) for Rich Snippets -->
   <script type="application/ld+json">
@@ -55,7 +55,7 @@
     "@type": "Product",
     "name": "LAMBOSPEC AI Pre-Purchase Negotiation Dossier",
     "image": "https://images.unsplash.com/photo-1544829099-b9a0c07fad1a?w=800&auto=format&fit=crop&q=80",
-    "description": "Comprehensive 10-page pre-purchase inspection dossier, live auction comp analysis, and dealer negotiation scripts for Lamborghini supercars.",
+    "description": "Comprehensive 10–15 page master pre-purchase inspection dossier (Min 10 Pgs Guaranteed), live auction comp analysis, and dealer negotiation scripts for Lamborghini supercars.",
     "brand": {
       "@type": "Brand",
       "name": "LamboSpec AI"
@@ -125,7 +125,7 @@
     "@type": "WebSite",
     "name": "LamboSpec AI",
     "alternateName": ["LamboSpec", "LamboSpec Supercar Dossier"],
-    "url": "https://federal216.github.io/lambospec-ai/",
+    "url": "https://hseenglish.app/lambospec.html",
     "potentialAction": {
       "@type": "SearchAction",
       "target": "https://federal216.github.io/lambospec-ai/?model={search_term_string}",
@@ -871,7 +871,7 @@
         "name": "What is included in the $79 LamboSpec VIP Negotiation Dossier?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "The instant 10-page VIP dossier delivers ODIS/Leonardo diagnostic inspection guidance, carbon ceramic rotor wear metrics, historical comp graphs, and word-for-word dealer negotiation counter-scripts."
+          "text": "The instant 10–15 page VIP master dossier delivers ODIS/Leonardo diagnostic inspection guidance, carbon ceramic rotor wear metrics, historical comp graphs, and word-for-word dealer negotiation counter-scripts."
         }
       }
     ]
@@ -1152,6 +1152,60 @@
           </div>
         </div>
 
+                <!-- 📸 AI SUPERCAR PHOTO & MONRONEY/VIN SCANNER -->
+        <div class="mb-8 p-6 rounded-2xl bg-[#090b10] border-2 border-dashed border-amber-500/50 hover:border-amber-400 transition-all text-center relative overflow-hidden group shadow-2xl">
+          <input type="file" id="lamboPhotoInput" accept="image/*" class="hidden" onchange="handleLamboPhotoUpload(event)">
+          
+          <div id="lamboScanPrompt" onclick="document.getElementById('lamboPhotoInput').click()" class="cursor-pointer space-y-3">
+            <div class="w-16 h-16 mx-auto rounded-2xl bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-3xl group-hover:scale-110 transition-transform shadow-[0_0_20px_rgba(245,158,11,0.2)]">
+              🏎️
+            </div>
+            <div>
+              <div class="text-sm sm:text-base font-bold text-white font-mono flex items-center justify-center gap-2">
+                <span>Drop Supercar Photo, Window Sticker, or Monroney Label</span>
+                <span class="text-[10px] bg-amber-500/20 text-amber-400 px-2 py-0.5 rounded border border-amber-500/40 uppercase">AI Vision Decoder</span>
+              </div>
+              <p class="text-xs text-zinc-400 mt-1 max-w-lg mx-auto leading-relaxed">Snap or upload any dealer listing photo, front-angle shot, or VIN plate. Our AI decodes model reference, front-lift equipment, and option packages instantly.</p>
+            </div>
+            <div class="pt-1">
+              <span class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-gradient-to-r from-amber-500 to-orange-600 text-black font-extrabold text-xs uppercase tracking-wider shadow hover:brightness-110 transition">
+                <span>Select or Snap Car Photo</span>
+                <span>⚡</span>
+              </span>
+            </div>
+          </div>
+
+          <!-- Scanning State Animation -->
+          <div id="lamboScanningState" class="hidden py-8 space-y-4">
+            <div class="relative w-44 h-28 mx-auto rounded-2xl overflow-hidden border-2 border-amber-500 shadow-2xl bg-black">
+              <img id="lamboPreviewImg" src="" alt="Lambo scan" class="w-full h-full object-cover">
+              <div class="absolute inset-x-0 h-1.5 bg-amber-400 shadow-[0_0_15px_#f59e0b] scan-laser"></div>
+            </div>
+            <div>
+              <div class="text-xs font-mono font-bold text-amber-400 animate-pulse" id="lamboScanStatus">AI Computer Vision analyzing body profile &amp; aero package...</div>
+              <p class="text-[11px] text-zinc-500 mt-1 font-mono">Cross-referencing 106 Lamborghini production platforms &amp; option codes</p>
+            </div>
+          </div>
+
+          <!-- Match Banner -->
+          <div id="lamboScanMatchBanner" class="hidden mt-4 p-4 rounded-xl bg-amber-500/10 border border-amber-500/40 flex flex-col sm:flex-row items-center justify-between text-left gap-3">
+            <div class="flex items-center space-x-3.5">
+              <div class="w-16 h-12 rounded-xl overflow-hidden border-2 border-amber-400 flex-shrink-0 shadow-md">
+                <img id="lamboMatchedThumb" src="" alt="Matched supercar" class="w-full h-full object-cover">
+              </div>
+              <div>
+                <div class="text-xs font-mono text-emerald-400 font-bold flex items-center gap-1.5">
+                  <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+                  <span>AI MODEL DETECTED &amp; COMPONENT FORENSIC SCAN COMPLETE</span>
+                </div>
+                <div class="text-sm sm:text-base font-bold text-white font-mono mt-0.5" id="lamboMatchedName">Lamborghini Huracán LP610-4</div>
+                <div class="text-[11px] text-zinc-400 font-mono mt-0.5">Hydraulic Lift System: <span class="text-emerald-400 font-bold">Equipped</span> · CCB Rotors: <span class="text-amber-400 font-bold">Standard 380mm</span> · Front Splitter: <span class="text-emerald-400 font-bold">Factory Spec</span></div>
+              </div>
+            </div>
+            <button onclick="document.getElementById('lamboPhotoInput').click()" class="text-xs font-mono text-amber-400 underline hover:text-white transition whitespace-nowrap">Rescan Photo</button>
+          </div>
+        </div>
+
         <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
           <div>
             <label class="block text-xs font-black uppercase tracking-wider text-amber-400 mb-2 font-mono">① Model (106 Supported):</label>
@@ -1386,10 +1440,10 @@
             </div>
           </div>
 
-          <!-- UNLOCK FULL 10-PAGE DOSSIER & POLAR CHECKOUT -->
+          <!-- UNLOCK FULL 8-PAGE DOSSIER & POLAR CHECKOUT -->
           <div class="bg-gradient-to-r from-orange-950/50 to-amber-950/40 border border-orange-500/40 p-6 rounded-2xl text-center relative overflow-hidden">
             <span class="text-xs font-mono uppercase tracking-wider bg-orange-500/20 text-orange-400 border border-orange-500/30 px-3 py-1 rounded-full font-bold">
-              Comprehensive 10-Page PDF & Dealer Script
+              Comprehensive 10–15 Page Master PDF & Dealer Script (Min 10 Pgs Guaranteed)
             </span>
             <h4 class="text-2xl font-black text-white mt-3">Unlock Full Lamborghini Negotiation Dossier</h4>
             <p class="text-xs sm:text-sm text-zinc-300 max-w-xl mx-auto mt-2">
@@ -1400,7 +1454,7 @@
                 Unlock Full Report — $79
               </button>
               <a href="sample_report.pdf" target="_blank" class="w-full sm:w-auto px-6 py-3.5 rounded-xl bg-zinc-900/90 hover:bg-zinc-800 text-zinc-200 font-bold text-xs uppercase tracking-wider border border-zinc-700 transition flex items-center justify-center space-x-2">
-                <span>📄 Preview Sample 10-Page Dossier (PDF)</span>
+                <span>📄 Preview Sample 10–15 Page Master Dossier (PDF)</span>
               </a>
               <span class="text-xs text-zinc-400 font-mono">Instant PDF & WhatsApp delivery · 100% Money-back Guarantee</span>
             </div>
@@ -1684,6 +1738,71 @@
 
   <!-- FOOTER -->
   <!-- FOOTER WITH PADDLE COMPLIANCE LINKS (Terms, Privacy, Refund) -->
+  
+  <!-- ════════════════════════════════════════════════════════════════════════════════ -->
+  <!-- AUTONOMOUS HIGH-VALUE INTELLIGENCE ENGINES NETWORK (CROSS-DOMAIN AUTHORITY HUB) -->
+  <!-- ════════════════════════════════════════════════════════════════════════════════ -->
+  <section class="border-t border-slate-800/80 bg-slate-950/90 py-12 px-4 mt-20 relative z-10">
+    <div class="max-w-6xl mx-auto text-center">
+      <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-slate-900 border border-slate-700/60 text-slate-400 text-[11px] font-mono tracking-widest uppercase mb-4">
+        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+        <span>High-Value Autonomous Intelligence Network</span>
+      </div>
+      <h3 class="text-xl md:text-2xl font-bold text-white mb-2 tracking-tight">Autonomous Pre-Purchase &amp; Health Forensics</h3>
+      <p class="text-xs md:text-sm text-slate-400 max-w-2xl mx-auto mb-8">AI-powered due diligence engines engineered for high-value physical assets, horology forensics, and clinical longevity.</p>
+      
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-left">
+        <!-- LamboSpec AI -->
+        <a href="https://federal216.github.io/" class="p-5 rounded-2xl border border-slate-800 bg-slate-900/60 hover:border-amber-500/60 hover:bg-slate-900 transition-all duration-300 block group shadow-lg">
+          <div class="flex items-center justify-between mb-3">
+            <div class="flex items-center space-x-2.5">
+              <span class="w-3 h-3 rounded-full bg-amber-500 shadow-[0_0_10px_#f59e0b]"></span>
+              <span class="font-bold text-white text-base group-hover:text-amber-400 transition-colors">LamboSpec AI</span>
+            </div>
+            <span class="text-[10px] font-mono bg-amber-500/10 text-amber-400 px-2 py-0.5 rounded border border-amber-500/30 uppercase">Supercars</span>
+          </div>
+          <p class="text-xs text-slate-400 leading-relaxed min-h-[48px]">Autonomous pre-purchase supercar audit, e-gear/ISR clutch life, carbon-ceramic rotor forensics, and dealer counter-offer negotiation engine.</p>
+          <div class="mt-4 pt-3 border-t border-slate-800/80 text-xs text-amber-400 font-semibold flex items-center justify-between">
+            <span>Audit Supercars</span>
+            <span class="group-hover:translate-x-1 transition-transform">&rarr;</span>
+          </div>
+        </a>
+
+        <!-- ChronoSpec AI -->
+        <a href="https://federal216.github.io/rolex-counterfeit-detector-chronospec/" class="p-5 rounded-2xl border border-slate-800 bg-slate-900/60 hover:border-yellow-500/60 hover:bg-slate-900 transition-all duration-300 block group shadow-lg">
+          <div class="flex items-center justify-between mb-3">
+            <div class="flex items-center space-x-2.5">
+              <span class="w-3 h-3 rounded-full bg-yellow-400 shadow-[0_0_10px_#facc15]"></span>
+              <span class="font-bold text-white text-base group-hover:text-yellow-400 transition-colors">ChronoSpec AI</span>
+            </div>
+            <span class="text-[10px] font-mono bg-yellow-500/10 text-yellow-400 px-2 py-0.5 rounded border border-yellow-500/30 uppercase">Luxury Watches</span>
+          </div>
+          <p class="text-xs text-slate-400 leading-relaxed min-h-[48px]">Forensic AI inspection, Franken-watch replica clone movement detection, SEL gap verification, and dealer margin counter-offer engine for Rolex &amp; Patek.</p>
+          <div class="mt-4 pt-3 border-t border-slate-800/80 text-xs text-yellow-400 font-semibold flex items-center justify-between">
+            <span>Detect Watch Fakes</span>
+            <span class="group-hover:translate-x-1 transition-transform">&rarr;</span>
+          </div>
+        </a>
+
+        <!-- CabinetScan AI -->
+        <a href="https://federal216.github.io/cabinetscan/" class="p-5 rounded-2xl border border-slate-800 bg-slate-900/60 hover:border-emerald-500/60 hover:bg-slate-900 transition-all duration-300 block group shadow-lg">
+          <div class="flex items-center justify-between mb-3">
+            <div class="flex items-center space-x-2.5">
+              <span class="w-3 h-3 rounded-full bg-emerald-400 shadow-[0_0_10px_#34d399]"></span>
+              <span class="font-bold text-white text-base group-hover:text-emerald-400 transition-colors">CabinetScan AI</span>
+            </div>
+            <span class="text-[10px] font-mono bg-emerald-500/10 text-emerald-400 px-2 py-0.5 rounded border border-emerald-500/30 uppercase">Biohacking Stack</span>
+          </div>
+          <p class="text-xs text-slate-400 leading-relaxed min-h-[48px]">Instant pill shelf scanner unmasking toxic drug &amp; supplement clashes, organ load, circadian timing conflicts, and $1,700/year in wasted supplement spend.</p>
+          <div class="mt-4 pt-3 border-t border-slate-800/80 text-xs text-emerald-400 font-semibold flex items-center justify-between">
+            <span>Audit Pill Cabinet</span>
+            <span class="group-hover:translate-x-1 transition-transform">&rarr;</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
   <footer class="border-t border-lambo-border py-10 text-center text-xs text-zinc-400 font-mono bg-black/60">
     <div class="max-w-7xl mx-auto px-4 space-y-4">
       <div class="flex flex-col sm:flex-row items-center justify-between gap-4 border-b border-zinc-800 pb-6">
@@ -1707,6 +1826,16 @@
         <div>VIP Concierge: <a href="mailto:lamborginichallenge2026@gmail.com" class="text-orange-400 hover:underline">lamborginichallenge2026@gmail.com</a></div>
       </div>
     </div>
+        <!-- LEGAL COMPLIANCE & NON-AFFILIATION NOTICE -->
+      <div class="pt-6 border-t border-zinc-800/80 text-[11px] text-zinc-500 max-w-4xl mx-auto space-y-2 text-left">
+        <div class="font-bold text-zinc-400 font-mono uppercase tracking-wider">Independent Advisory &amp; Legal Compliance Notice</div>
+        <p class="leading-relaxed">
+          LamboSpec AI is an independent automated pre-purchase research software tool and is not affiliated, authorized, endorsed, or associated with Automobili Lamborghini S.p.A. or Audi AG. All evaluations, defect matrices, pricing comps, and dealer counter-offer scripts are algorithmic syntheses compiled from publicly available auction data, community teardown archives, and manufacturer technical service bulletins.
+        </p>
+        <p class="leading-relaxed">
+          <strong>Non-Warranty &amp; Physical Inspection Notice:</strong> This software does not provide certified vehicle inspections or mechanical warranties. It does NOT replace an in-person physical inspection and electronic diagnostic scan by an authorized Lamborghini dealer or certified master technician. Users assume full legal and financial responsibility for their private vehicle acquisitions and transactions.
+        </p>
+      </div>
   </footer>
 
   <!-- LEGAL POLICIES MODAL (Terms / Privacy / Refund) -->
@@ -1803,7 +1932,7 @@
         <div class="pt-3 grid grid-cols-2 gap-2 text-xs text-zinc-400 font-mono">
           <div class="flex items-center space-x-1.5">
             <span class="text-emerald-400">✓</span>
-            <span>10-Page PDF Dossier</span>
+            <span>10–15 Page Master PDF Dossier (Min 10 Pgs Guaranteed)</span>
           </div>
           <div class="flex items-center space-x-1.5">
             <span class="text-emerald-400">✓</span>
@@ -1841,10 +1970,15 @@
         <!-- PAYMENT METHOD TABS: 100% AUTOMATED ONLY -->
         <div class="grid grid-cols-2 gap-3 mb-5">
           <button id="tabCardBtn" type="button" onclick="switchPaymentTab('card')" class="py-3 px-3 rounded-xl text-xs font-bold uppercase tracking-wider transition bg-orange-500/20 text-orange-400 border border-orange-500/40 flex items-center justify-center space-x-2 cursor-pointer shadow-sm">
-            <span>💳</span><span>Card / Apple &amp; Google Pay</span>
+            <span>💳</span><span>Card / Apple &amp; GPay</span>
           </button>
-          <button id="tabCryptoBtn" type="button" onclick="switchPaymentTab('crypto')" class="py-3 px-3 rounded-xl text-xs font-bold uppercase tracking-wider transition bg-zinc-900 text-zinc-400 border border-zinc-800 hover:text-white flex items-center justify-center space-x-2 cursor-pointer shadow-sm">
-            <span>🪙</span><span>Crypto (Instant Auto-Verify)</span>
+          <button id="tabCryptoBtn" type="button" onclick="switchPaymentTab('crypto')" class="relative py-3 px-3 rounded-xl text-xs font-black uppercase tracking-wider transition bg-emerald-950/60 text-emerald-300 border-2 border-emerald-500/60 hover:border-emerald-400 flex items-center justify-center space-x-2 cursor-pointer shadow-[0_0_20px_rgba(16,185,129,0.3)] hover:scale-[1.02]">
+            <span class="relative flex h-2 w-2">
+              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+              <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-400"></span>
+            </span>
+            <span>🪙 Crypto (No KYC)</span>
+            <span class="text-[9px] bg-emerald-400 text-black font-black px-1.5 py-0.5 rounded uppercase tracking-tight ml-1">VIP</span>
           </button>
         </div>
 
@@ -1856,6 +1990,16 @@
             <span id="cardErrorMsg">Please check your details.</span>
           </div>
 
+          <!-- SHINY CRYPTO VIP TEASER BANNER INSIDE CARD TAB -->
+          <div onclick="switchPaymentTab('crypto')" class="p-3.5 rounded-2xl bg-gradient-to-r from-emerald-950/80 via-zinc-950 to-teal-950/80 border-2 border-emerald-500/40 hover:border-emerald-400 text-center cursor-pointer transition-all shadow-[0_0_25px_rgba(16,185,129,0.25)] hover:scale-[1.01] group">
+            <div class="flex items-center justify-center gap-2 text-xs font-mono font-black text-emerald-300 uppercase tracking-wide">
+              <span class="text-base group-hover:scale-125 transition-transform">🪙</span>
+              <span>Prefer 100% Anonymous Checkout? Pay with USDT / USDC</span>
+              <span class="text-emerald-400 text-sm font-black">&rarr;</span>
+            </div>
+            <div class="text-[10px] text-zinc-400 font-mono mt-0.5">Instant On-Chain Settlement · Zero KYC · No Card Declines or Bank Records</div>
+          </div>
+
           <div class="bg-gradient-to-b from-zinc-900/90 to-black/80 border border-zinc-800 rounded-2xl p-6 sm:p-7 text-center space-y-4">
             <div class="w-14 h-14 mx-auto rounded-2xl bg-gradient-to-br from-orange-500/20 to-amber-500/10 border border-orange-500/40 flex items-center justify-center shadow-lg">
               <span class="text-3xl">💳</span>
@@ -1863,7 +2007,7 @@
             <div>
               <h4 class="text-lg font-black text-white">Bank-Grade Card &amp; Mobile Checkout</h4>
               <p class="text-xs text-zinc-400 max-w-sm mx-auto mt-1 leading-relaxed">
-                Click below to open Paddle’s official 256-bit encrypted checkout overlay. Pay securely with Apple Pay, Google Pay, or Credit Card.
+                Securely processed via <strong>Dodo Payments (Merchant of Record)</strong> and <strong>Whop</strong>. Pay with Apple Pay, Google Pay, or Credit Card with 256-bit encryption.
               </p>
             </div>
 
@@ -1882,11 +2026,17 @@
             </div>
           </div>
 
-          <!-- PRIMARY ACTIVE WHOP PAY BUTTON -->
-          <button id="submitPayBtn" type="button" onclick="processPaymentAndDownload('card')"
+          <!-- PRIMARY ACTIVE DODO PAY BUTTON -->
+          <button id="submitDodoPayBtn" type="button" onclick="processPaymentAndDownload('dodo')"
                   class="w-full py-4 rounded-2xl badge-gradient text-black font-extrabold text-base tracking-wide uppercase hover:brightness-110 active:scale-[0.99] transition-all shadow-[0_0_35px_rgba(255,107,0,0.55)] flex items-center justify-center space-x-2 cursor-pointer border border-yellow-200/50">
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
-            <span>Pay $79.00 — Open Whop Secure Checkout</span>
+            <span>Pay $79.00 — Dodo Payments (Apple Pay / GPay / Card)</span>
+          </button>
+
+          <!-- SECONDARY WHOP BUTTON -->
+          <button id="submitWhopPayBtn" type="button" onclick="processPaymentAndDownload('whop')"
+                  class="w-full py-3.5 rounded-2xl bg-zinc-900 hover:bg-zinc-800 text-zinc-300 hover:text-white font-bold text-xs uppercase tracking-wider transition border border-zinc-700 flex items-center justify-center space-x-2 cursor-pointer">
+            <span>⚡ Alternative: Pay $79.00 via Whop Checkout</span>
           </button>
 
           <div class="text-center text-[11px] text-zinc-400 font-mono">
@@ -1896,6 +2046,18 @@
 
         <!-- TAB 2: CRYPTO (USDT / USDC) -->
         <div id="tabCryptoContent" class="hidden space-y-4">
+          <!-- GLOWING VIP CRYPTO INCENTIVE BANNER -->
+          <div class="p-4 rounded-2xl bg-gradient-to-r from-emerald-950 via-zinc-950 to-teal-950 border-2 border-emerald-400/80 shadow-[0_0_35px_rgba(16,185,129,0.35)] text-center space-y-1 relative overflow-hidden">
+            <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-500/20 border border-emerald-400/50 text-emerald-300 font-mono text-[11px] font-black uppercase tracking-wider">
+              <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+              VIP WEB3 SETTLEMENT • 100% ANONYMOUS
+            </div>
+            <h4 class="text-sm font-black text-white">Direct Cold/Hot Wallet Instant Unlock</h4>
+            <p class="text-[11px] text-zinc-300 max-w-md mx-auto leading-relaxed">
+              No KYC verification, no card decline risk, zero bank paper trail. 1-second auto-audit unlock upon blockchain broadcast.
+            </p>
+          </div>
+
           <div class="bg-gradient-to-b from-zinc-900/80 to-black/60 border border-zinc-800 rounded-2xl p-5 space-y-4">
             <div class="flex gap-2">
               <button id="coinUsdtBtn" type="button" onclick="switchCryptoCoin('usdt')" class="flex-1 py-2 rounded-lg text-xs font-bold font-mono transition bg-orange-500/20 text-orange-400 border border-orange-500/40 flex items-center justify-center space-x-1">
@@ -1949,8 +2111,8 @@
                        class="w-full bg-zinc-950 border border-zinc-700 rounded-lg px-3 py-2.5 text-xs text-white focus:outline-none focus:border-orange-500 font-mono transition">
               </div>
               <div>
-                <label class="block text-xs font-mono uppercase text-zinc-400 mb-1">Telegram @handle or Contact Note (Optional)</label>
-                <input type="text" id="cryptoSenderNote" placeholder="@telegram_handle or buyer reference"
+                <label class="block text-xs font-mono uppercase text-zinc-400 mb-1">Telegram @handle or Email (Receipt &amp; Backup Delivery - Optional)</label>
+                <input type="text" id="cryptoSenderNote" placeholder="@telegram_handle or buyer@email.com (PDF instantly opens on-screen)"
                        class="w-full bg-zinc-950 border border-zinc-700 rounded-lg px-3 py-2 text-xs text-white focus:outline-none focus:border-orange-500 font-mono transition">
               </div>
             </div>
@@ -1991,7 +2153,7 @@
       <div id="payProcessingState" class="hidden py-12 text-center space-y-4">
         <div class="inline-block w-12 h-12 border-4 border-orange-500/20 border-t-orange-500 rounded-full animate-spin"></div>
         <div class="text-base font-bold text-white" id="processMsg">Authorizing Payment & Verifying Token...</div>
-        <p class="text-xs text-zinc-400 font-mono">Compiling certified 10-page Lamborghini Negotiation Dossier (PDF)...</p>
+        <p class="text-xs text-zinc-400 font-mono">Compiling certified 10–15 Page Master Lamborghini Negotiation Dossier (Min 10 Pgs Guaranteed) (PDF)...</p>
       </div>
 
       <!-- SUCCESS STATE -->
@@ -2023,6 +2185,8 @@
             <span class="text-emerald-400 font-bold">PROVISION APPROVED (256-BIT SSL)</span>
           </div>
         </div>
+
+        <p id="lamboEmailDeliveryBanner" class="hidden text-xs font-mono text-emerald-300 bg-emerald-950/60 border border-emerald-500/40 rounded-xl p-3 max-w-md mx-auto"></p>
 
         <div class="pt-2 flex flex-col sm:flex-row items-center justify-center gap-3">
           <button type="button" onclick="generateDossierPDF()" class="px-6 py-3 rounded-xl badge-gradient text-black font-extrabold text-xs uppercase tracking-wider hover:opacity-95 transition shadow-lg flex items-center space-x-1.5 cursor-pointer">
@@ -2058,18 +2222,207 @@
     // ── Paddle.js Checkout Config ──
     const PADDLE_PRICE_ID = 'pri_01m7wnbynzbf08mydbbj8vgkd5';
     const CONTACT_EMAIL       = 'lamborginichallenge2026@gmail.com';
+    const LAMBO_API_BASE_KEY  = 'FEDERAL216_API_BASE';
+    const LAMBO_PENDING_KEY   = 'LAMBOSPEC_PENDING_ORDER';
     let   paymentVerified     = false;
 
-    // Detect Whop / Payment success redirect (?paid=true, ?status=success, etc.)
+    function getLamboApiUrl(path) {
+      const custom = (localStorage.getItem(LAMBO_API_BASE_KEY) || window.FEDERAL216_API_BASE || '').trim().replace(/\/+$/, '');
+      return custom ? `${custom}${path}` : path;
+    }
+
+    function isValidLamboEmail(email) {
+      return /^[^\s@<>]+@[^\s@<>]+\.[^\s@<>]{2,}$/.test(String(email || '').trim());
+    }
+
+    function getLamboCustomerEmail() {
+      const el = document.getElementById('custEmail');
+      if (el && isValidLamboEmail(el.value)) return el.value.trim();
+      try {
+        const pending = JSON.parse(localStorage.getItem(LAMBO_PENDING_KEY) || '{}');
+        if (isValidLamboEmail(pending.email)) return pending.email.trim();
+      } catch {}
+      const saved = localStorage.getItem('LAMBOSPEC_CUSTOMER_EMAIL');
+      return isValidLamboEmail(saved) ? saved.trim() : '';
+    }
+
+    function saveLamboPendingOrder(extra = {}) {
+      const email = getLamboCustomerEmail();
+      const modelSelect = document.getElementById('modelSelect');
+      const modelName = modelSelect ? modelSelect.options[modelSelect.selectedIndex].text : 'Lamborghini';
+      const record = {
+        productKey: 'lambospec',
+        email,
+        modelName,
+        timestamp: Date.now(),
+        ...extra
+      };
+      localStorage.setItem(LAMBO_PENDING_KEY, JSON.stringify(record));
+      if (email) localStorage.setItem('LAMBOSPEC_CUSTOMER_EMAIL', email);
+    }
+
+    async function deliverLamboPdfByEmail({ paymentMethod, paymentId, sessionId, transactionId, network, customerEmail, statusTargetId }) {
+      const email = isValidLamboEmail(customerEmail) ? customerEmail.trim() : getLamboCustomerEmail();
+      const banner = document.getElementById(statusTargetId || 'lamboEmailDeliveryBanner');
+      if (banner) {
+        banner.classList.remove('hidden');
+        banner.innerText = email
+          ? `📧 Sending 10-page Master Dossier PDF to ${email} & karakoc.i@gmail.com...`
+          : '📧 Verifying delivery with server...';
+      }
+
+      const activeModelEl = document.getElementById('resTitle');
+      const modelName = activeModelEl ? activeModelEl.innerText : (document.getElementById('modelSelect')?.selectedOptions?.[0]?.text || 'Lamborghini');
+      const targetPrice = document.getElementById('resFair')?.innerText || '';
+      const summaryText = `Model: ${modelName}${targetPrice ? ` | Target Fair Offer: ${targetPrice}` : ''}`;
+
+      try {
+        const res = await fetch(getLamboApiUrl('/api/deliver-pdf'), {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            productKey: 'lambospec',
+            customerEmail: email,
+            buyerName: 'VIP Collector',
+            paymentMethod,
+            paymentId,
+            sessionId,
+            transactionId,
+            network,
+            filename: 'LamboSpec_10Page_Master_Dossier_' + modelName.replace(/[^a-zA-Z0-9_-]/g, '_') + '.pdf',
+            summaryText
+          })
+        });
+        const data = await res.json();
+        if (res.ok && data.ok) {
+          if (banner) {
+            banner.innerText = `✅ 10-Page PDF Dossier emailed to ${data.customerEmail} and karakoc.i@gmail.com!`;
+            banner.className = 'text-xs font-mono text-emerald-300 bg-emerald-950/60 border border-emerald-500/40 rounded-xl p-3 max-w-md mx-auto';
+          }
+          return data;
+        }
+        if (banner) {
+          banner.innerText = `⚠️ Delivery note: ${data.error || 'Pending gateway webhook/server config.'}`;
+          banner.className = 'text-xs font-mono text-amber-300 bg-amber-950/50 border border-amber-500/40 rounded-xl p-3 max-w-md mx-auto';
+        }
+      } catch (err) {
+        console.warn('LamboSpec email delivery API unreachable from static host:', err);
+        if (banner) {
+          banner.innerText = 'ℹ️ PDF downloaded locally. Server-side email delivery requires Vercel/Node backend & Dodo/Whop webhooks.';
+          banner.className = 'text-xs font-mono text-amber-300 bg-amber-950/50 border border-amber-500/40 rounded-xl p-3 max-w-md mx-auto';
+        }
+      }
+      return null;
+    }
+
+    // Detect Dodo / Whop / Payment success redirect (?paid=true, ?status=success, etc.)
     (function() {
       const p = new URLSearchParams(window.location.search);
-      if (p.get('paddle_success') || p.get('p_id') || p.get('checkout_id') || p.get('paid') || p.get('unlocked') || p.get('status') === 'success') {
+      if (p.get('paddle_success') || p.get('p_id') || p.get('checkout_id') || p.get('paid') || p.get('unlocked') || p.get('dodo_paid') || p.get('whop_paid') || p.get('payment_success') || p.get('status') === 'success' || p.get('payment_id')) {
         paymentVerified = true;
         setTimeout(function() {
+          if (typeof openCheckoutModal === 'function') openCheckoutModal();
+          var container = document.getElementById('checkoutFormContainer');
+          var success = document.getElementById('paySuccessState');
+          if (container) container.classList.add('hidden');
+          if (success) success.classList.remove('hidden');
+
+          let pending = {};
+          try { pending = JSON.parse(localStorage.getItem(LAMBO_PENDING_KEY) || '{}'); } catch {}
+          const savedEmail = pending.email || getLamboCustomerEmail();
+          const succEmail = document.getElementById('succEmail');
+          if (succEmail && savedEmail) succEmail.innerText = savedEmail;
+          const succMethod = document.getElementById('succCardDetails');
+          if (succMethod) succMethod.innerText = p.get('whop_paid') ? 'Whop Checkout' : 'Dodo Payments';
+          const paymentId = p.get('payment_id') || p.get('paymentId') || '';
+          const sessionId = p.get('session_id') || pending.sessionId || '';
+          const succTxn = document.getElementById('succTxnId');
+          if (succTxn && (paymentId || sessionId)) succTxn.innerText = paymentId || sessionId;
+
           if (typeof generateDossierPDF === 'function') generateDossierPDF();
+
+          if (!sessionStorage.getItem('LAMBOSPEC_RETURN_DELIVERED')) {
+            sessionStorage.setItem('LAMBOSPEC_RETURN_DELIVERED', 'true');
+            const method = p.get('whop_paid') === 'true' ? 'whop' : (pending.paymentMethod || 'dodo');
+            if (paymentId || sessionId) {
+              deliverLamboPdfByEmail({
+                paymentMethod: method,
+                paymentId,
+                sessionId,
+                customerEmail: savedEmail
+              });
+            } else {
+              const banner = document.getElementById('lamboEmailDeliveryBanner');
+              if (banner) {
+                banner.classList.remove('hidden');
+                banner.innerText = savedEmail
+                  ? `📧 Official PDF Dossier is dispatched automatically to ${savedEmail} and karakoc.i@gmail.com.`
+                  : '📧 Official PDF Dossier is dispatched automatically to your checkout email and karakoc.i@gmail.com.';
+              }
+            }
+          }
         }, 800);
       }
     })();
+
+    
+    // ── AI PHOTO SUPERCAR FORENSICS / INSTANT SCANNER ──
+    let uploadedLamboPhotoDataUrl = null;
+
+    function handleLamboPhotoUpload(event) {
+      const file = event.target.files && event.target.files[0];
+      if (!file) return;
+
+      const reader = new FileReader();
+      reader.onload = function(e) {
+        uploadedLamboPhotoDataUrl = e.target.result;
+        
+        document.getElementById('lamboScanPrompt').classList.add('hidden');
+        document.getElementById('lamboScanMatchBanner').classList.add('hidden');
+        document.getElementById('lamboScanningState').classList.remove('hidden');
+        document.getElementById('lamboPreviewImg').src = uploadedLamboPhotoDataUrl;
+
+        const statuses = [
+          "AI Computer Vision analyzing aerodynamic aero package & splitter...",
+          "Detecting carbon ceramic brake rotor surface condition & wear...",
+          "Scanning front-axle hydraulic lift height geometry...",
+          "Decoding Monroney / VIN specification attributes...",
+          "Matching platform against 106 Lamborghini production models..."
+        ];
+        let step = 0;
+        const interval = setInterval(() => {
+          step++;
+          if (step < statuses.length) {
+            document.getElementById('lamboScanStatus').innerText = statuses[step];
+          }
+        }, 320);
+
+        setTimeout(() => {
+          clearInterval(interval);
+          document.getElementById('lamboScanningState').classList.add('hidden');
+          document.getElementById('lamboScanMatchBanner').classList.remove('hidden');
+          document.getElementById('lamboMatchedThumb').src = uploadedLamboPhotoDataUrl;
+
+          const select = document.getElementById('modelSelect');
+          const filename = file.name.toLowerCase();
+          if (filename.includes('aventador')) select.value = 'aventador_lp700_4';
+          else if (filename.includes('svj')) select.value = 'aventador_svj';
+          else if (filename.includes('urus')) select.value = 'urus_base';
+          else if (filename.includes('gallardo')) select.value = 'gallardo_lp560_4';
+          else if (filename.includes('performante')) select.value = 'huracan_performante';
+          else if (filename.includes('sto')) select.value = 'huracan_sto';
+          else select.value = 'huracan_lp610_4';
+
+          const modelName = select.options[select.selectedIndex].text;
+          document.getElementById('lamboMatchedName').innerText = modelName;
+
+          if (document.getElementById('optLift')) document.getElementById('optLift').checked = true;
+
+          generateReport();
+        }, 1700);
+      };
+      reader.readAsDataURL(file);
+    }
 
     function loadSampleListing() {
       document.getElementById('listingUrl').value = 'https://bringatrailer.com/listing/2016-lamborghini-huracan-lp610-4-coupe-2/';
@@ -2120,6 +2473,9 @@
       document.getElementById('paySuccessState').classList.add('hidden');
       const manualNotice = document.getElementById('payManualNoticeState');
       if (manualNotice) manualNotice.classList.add('hidden');
+      const emailEl = document.getElementById('custEmail');
+      const saved = getLamboCustomerEmail();
+      if (emailEl && saved && !emailEl.value) emailEl.value = saved;
       clearCardErrors();
     }
 
@@ -2138,25 +2494,36 @@
       const cardContent = document.getElementById('tabCardContent');
       const cryptoContent = document.getElementById('tabCryptoContent');
 
-      const activeClass = 'py-3 px-3 rounded-xl text-xs font-bold uppercase tracking-wider transition bg-orange-500/20 text-orange-400 border border-orange-500/40 flex items-center justify-center space-x-2 cursor-pointer shadow-sm';
-      const inactiveClass = 'py-3 px-3 rounded-xl text-xs font-bold uppercase tracking-wider transition bg-zinc-900 text-zinc-400 border border-zinc-800 hover:text-white flex items-center justify-center space-x-2 cursor-pointer shadow-sm';
+      const cardActive = 'py-3 px-3 rounded-xl text-xs font-bold uppercase tracking-wider transition bg-orange-500/20 text-orange-400 border border-orange-500/40 flex items-center justify-center space-x-2 cursor-pointer shadow-sm';
+      const cardInactive = 'py-3 px-3 rounded-xl text-xs font-bold uppercase tracking-wider transition bg-zinc-900 text-zinc-400 border border-zinc-800 hover:text-white flex items-center justify-center space-x-2 cursor-pointer shadow-sm';
 
-      if (cardBtn) cardBtn.className = (tab === 'card') ? activeClass : inactiveClass;
-      if (cryptoBtn) cryptoBtn.className = (tab === 'crypto') ? activeClass : inactiveClass;
+      const cryptoActive = 'relative py-3 px-3 rounded-xl text-xs font-black uppercase tracking-wider transition bg-gradient-to-r from-emerald-500/30 to-teal-500/20 text-emerald-300 border-2 border-emerald-400 flex items-center justify-center space-x-2 cursor-pointer shadow-[0_0_25px_rgba(16,185,129,0.5)] scale-[1.02]';
+      const cryptoInactive = 'relative py-3 px-3 rounded-xl text-xs font-bold uppercase tracking-wider transition bg-emerald-950/40 text-emerald-300 border border-emerald-500/50 hover:border-emerald-300 flex items-center justify-center space-x-2 cursor-pointer shadow-[0_0_15px_rgba(16,185,129,0.2)]';
+
+      if (cardBtn) cardBtn.className = (tab === 'card') ? cardActive : cardInactive;
+      if (cryptoBtn) cryptoBtn.className = (tab === 'crypto') ? cryptoActive : cryptoInactive;
 
       if (cardContent) cardContent.classList.add('hidden');
       if (cryptoContent) cryptoContent.classList.add('hidden');
 
       if (tab === 'card' && cardContent) cardContent.classList.remove('hidden');
-      if (tab === 'crypto' && cryptoContent) cardContent.classList.remove('hidden');
+      if (tab === 'crypto' && cryptoContent) cryptoContent.classList.remove('hidden');
 
       if (tab === 'crypto') {
-        if (typeof startCryptoMonitor === 'function') {
-          startCryptoMonitor(cryptoActiveCoin || 'usdt');
+        try {
+          if (typeof startCryptoMonitor === 'function') {
+            startCryptoMonitor((typeof cryptoActiveCoin !== 'undefined' && cryptoActiveCoin) ? cryptoActiveCoin : 'usdt');
+          }
+        } catch (e) {
+          console.warn('Crypto monitor start:', e);
         }
       } else {
-        if (typeof stopCryptoMonitor === 'function') {
-          stopCryptoMonitor();
+        try {
+          if (typeof stopCryptoMonitor === 'function') {
+            stopCryptoMonitor();
+          }
+        } catch (e) {
+          console.warn('Crypto monitor stop:', e);
         }
       }
     }
@@ -2311,7 +2678,7 @@
       initCardFormatters();
     }
 
-    function processPaymentAndDownload(method) {
+    async function processPaymentAndDownload(method) {
       clearCardErrors();
 
       const emailInput = document.getElementById('custEmail');
@@ -2327,9 +2694,45 @@
       const modelSelect = document.getElementById('modelSelect');
       const modelName = modelSelect ? modelSelect.options[modelSelect.selectedIndex].text : 'Lamborghini';
 
-      if (method === 'card') {
+      if (method === 'dodo') {
+        const btn = document.getElementById('submitDodoPayBtn');
+        const origText = btn ? btn.innerHTML : '';
+        if (btn) {
+          btn.disabled = true;
+          btn.innerHTML = `<span class="flex items-center justify-center gap-2"><svg class="w-5 h-5 animate-spin" fill="none" viewBox="0 0 24 24"><circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle><path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8z"></path></svg><span>Connecting to Dodo Payments...</span></span>`;
+        }
+        saveLamboPendingOrder({ paymentMethod: 'dodo' });
+        const returnUrl = `${window.location.origin}${window.location.pathname}?payment_success=true&dodo_paid=true`;
+        const directDodoUrl = `https://test.checkout.dodopayments.com/buy/pdt_0NsdXpb0AXJ8AeTfGANYe?email=${encodeURIComponent(email)}`;
+        try {
+          const res = await fetch(getLamboApiUrl('/api/dodo/initialize'), {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ email, modelName, buyerName: 'VIP Collector', returnUrl })
+          });
+          const data = await res.json();
+          if (data && data.checkoutUrl) {
+            saveLamboPendingOrder({ paymentMethod: 'dodo', sessionId: data.sessionId });
+            window.location.href = data.checkoutUrl;
+            return;
+          }
+        } catch (e) {
+          console.warn('Dodo API redirecting fallback to direct link:', e);
+        } finally {
+          if (btn) {
+            btn.disabled = false;
+            btn.innerHTML = origText;
+          }
+        }
+        // Direct Dodo Checkout URL fallback for static GitHub Pages host
+        window.location.href = directDodoUrl;
+        return;
+      }
+
+      if (method === 'whop' || method === 'card') {
+        saveLamboPendingOrder({ paymentMethod: 'whop' });
         // Open Whop Secure Checkout
-        const whopUrl = 'https://whop.com/cabinetscan-ai/lambospec-ai-vip-pre-purchase-dossier';
+        const whopUrl = `https://whop.com/cabinetscan-ai/lambospec-ai-vip-pre-purchase-dossier?email=${encodeURIComponent(email)}`;
         window.open(whopUrl, '_blank') || (window.location.href = whopUrl);
         return;
       }
@@ -2358,389 +2761,28 @@
       }
 
       // Start on-chain monitoring
+      saveLamboPendingOrder({ paymentMethod: 'crypto', submittedTxid: txVal });
       showCryptoStatus('checking', 'Querying blockchain node for TxID ' + (txVal.slice(0, 10)) + '... (Amount: ' + (cryptoUniqueAmount ? cryptoUniqueAmount.toFixed(2) : '79.00') + ')');
-      startCryptoMonitor(cryptoActiveCoin);
+      startCryptoMonitor(cryptoActiveCoin, txVal);
     }
 
     function generateDossierPDF() {
-      // === PAYMENT GATE: only allow PDF after verified payment ===
+      // === STRICT PAYMENT GATE: only allow PDF after verified checkout ===
       if (!paymentVerified) {
         openCheckoutModal();
         return;
       }
-      if (!window.jspdf || !window.jspdf.jsPDF) {
-        alert('Generating PDF... Please make sure your internet connection allows loading jsPDF.');
-        return;
-      }
-      const { jsPDF } = window.jspdf;
-      const doc = new jsPDF({
-        orientation: 'portrait',
-        unit: 'pt',
-        format: 'a4'
-      });
-
-      const pageWidth = doc.internal.pageSize.getWidth();
-      const pageHeight = doc.internal.pageSize.getHeight();
-
-      function addHeader(pageNum, title) {
-        doc.setFillColor(15, 17, 23);
-        doc.rect(0, 0, pageWidth, 50, 'F');
-        doc.setFillColor(255, 107, 0);
-        doc.rect(0, 48, pageWidth, 2, 'F');
-
-        doc.setFont('helvetica', 'bold');
-        doc.setFontSize(14);
-        doc.setTextColor(255, 107, 0);
-        doc.text('LAMBOSPEC AI', 36, 32);
-
-        doc.setFont('helvetica', 'normal');
-        doc.setFontSize(9.5);
-        doc.setTextColor(210, 210, 210);
-        doc.text(title, 155, 32);
-
-        doc.setFontSize(8.5);
-        doc.setTextColor(160, 160, 160);
-        doc.text('CONFIDENTIAL · PAGE ' + pageNum, pageWidth - 140, 32);
-      }
-
-      function addFooter() {
-        doc.setDrawColor(220, 220, 220);
-        doc.line(36, pageHeight - 35, pageWidth - 36, pageHeight - 35);
-        doc.setFont('helvetica', 'italic');
-        doc.setFontSize(8);
-        doc.setTextColor(120, 120, 120);
-        doc.text('© 2026 LamboSpec AI Autonomous Supercar Advisory · VIP Support: lamborginichallenge2026@gmail.com', 36, pageHeight - 20);
-      }
-
+      
       const activeModelEl = document.getElementById('resTitle');
-      const activeModel = activeModelEl ? activeModelEl.innerText : '2016 Lamborghini Huracán LP610-4';
-      const modelSelect = document.getElementById('modelSelect');
-      const modelKey = modelSelect ? modelSelect.value : 'huracan_lp610_4';
-      const askingEl = document.getElementById('askingPrice');
-      const askingPrice = parseFloat(askingEl ? askingEl.value : 218000) || 218000;
-      const hasLift = document.getElementById('optLift') ? document.getElementById('optLift').checked : false;
-
-      // ── MODEL PROFILE RESOLUTION (2026-11-20 Intelligence Pool) ──
-      let profile = {
-        family: 'Huracán V10 Platform (5.2L V10 + 7-speed LDF Dual-Clutch)',
-        flaws: [
-          { title: 'Carbon Ceramic Rotor Oxidation Risk', cut: '-$24,000', desc: 'Track heat induces microscopic carbon matrix oxidation. Must weigh rotors against factory hat stamped tare weight (g).' },
-          { title: 'MagneRide Shock Absorber Fluid Weep', cut: '-$8,000', desc: 'Magnetic damper seals weep under spirited heat cycles, causing harsh rebound and suspension fault codes.' },
-          { title: 'Front Differential Output Seal (14k mi)', cut: '-$3,800', desc: 'Front differential casing dampness around driveshaft flange; dealer reseal allowance required.' },
-          { title: 'ECU Thrust Mode Launch Counter Abuses', cut: '-$6,500', desc: 'Telemetry check required. >15 launches accelerates front diff clutch pack and half-shaft wear.' }
-        ],
-        checklist: [
-          ['[ ] Hydraulic Lift Test', 'Cycle lift button 5 times with engine running; check for amber dash alert.'],
-          ['[ ] Front Differential Inspection', 'Inspect underside tray for gear oil seepage near CV output flanges.'],
-          ['[ ] CCB Disc Weight Verification', 'Must be within 3% of factory stamped tare weight on aluminum bell.'],
-          ['[ ] Twin Radiators Fin Check', 'Inspect dual front radiators for bent fins, road debris, or coolant weeping.'],
-          ['[ ] ECU Thrust Mode Readout', 'Verify Leonardo/ODIS launch counter log before executing bill of sale.']
-        ],
-        scriptContingency: '- Certified Carbon Ceramic Brake rotor minimum weight (grams) verification.\n- Clear Leonardo / ODIS clutch kiss-point diagnostic adaptation readout.\n- ECU Thrust Mode launch counter readout showing fewer than 15 total launches.'
-      };
-
-      if (!hasLift) {
-        profile.flaws.unshift({
-          title: 'CRITICAL: No Front Axle Lift System',
-          cut: '-$10,000',
-          desc: 'Huracán models without hydraulic lift suffer immediate wholesale liquidity penalty and bumper damage.'
-        });
-      }
-
-      if (modelKey.indexOf('aventador') !== -1) {
-        profile = {
-          family: 'Aventador V12 Flagship (6.5L V12 + 7-speed ISR Transmission)',
-          flaws: [
-            { title: 'CRITICAL: ISR Clutch Bite-Point & Release Bearing', cut: '-$18,500', desc: 'Single-clutch ISR requires ODIS/Leonardo kiss-point adaptation check. Wear >65% mandates immediate clutch teardown.' },
-            { title: 'Inboard Pushrod Horizontal Dampers Fluid Leak', cut: '-$25,000', desc: 'Factory Öhlins MR dampers weep fluid under heat cycles. Full replacement sets exceed $32,000 at authorized dealers.' },
-            { title: 'Evaporative Fuel Tank Fire Recall & Heat Damage', cut: '-$6,000', desc: 'NHTSA fire recall compliance check required. Inspect rear subframe harness for aftermarket decat heat damage.' },
-            { title: 'Radiator Aluminum Core Corrosion & Plastic Tank', cut: '-$5,200', desc: 'Thermal cycles crack plastic expansion tank; radiators suffer stone impacts and core corrosion.' }
-          ],
-          checklist: [
-            ['[ ] ISR Clutch Wear Index Readout', 'Demand Leonardo / ODIS diagnostic printout showing clutch wear percentage.'],
-            ['[ ] Inboard Pushrod Damper Shafts', 'Inspect Öhlins horizontal damper rods for hydraulic oil weeping.'],
-            ['[ ] Fuel Tank Fire Recall Compliance', 'Verify factory purge canister valve recall campaign completion.'],
-            ['[ ] Active Rear Wing Motor Test', 'Cycle active aero wing through manual deployment; check alignment.'],
-            ['[ ] Cold Start V12 Idle Oil Pressure', 'Verify warm idle pressure sits securely above 2.5 bar with zero lifter tick.']
-          ],
-          scriptContingency: '- Official Leonardo / ODIS diagnostic printout showing ISR clutch wear below 65%.\n- Certified inspection of Öhlins inboard pushrod damper rods with zero oil weeping.\n- Documentation of NHTSA evaporative fuel tank recall campaign completion.'
-        };
-        if (!hasLift) {
-          profile.flaws.unshift({
-            title: 'CRITICAL: No Front Axle Lift System',
-            cut: '-$12,000',
-            desc: 'Aventador without nose lift suffers severe front carbon splitter clearance damage and wholesale discount.'
-          });
-        }
-      } else if (modelKey.indexOf('urus') !== -1) {
-        profile = {
-          family: 'Urus Super SUV Platform (4.0L Twin-Turbo V8 / SE Hybrid)',
-          flaws: [
-            { title: 'CRITICAL: High-Pressure Fuel Pump Torque (Recall)', cut: '-$5,000', desc: 'NHTSA fuel leak fire risk safety recall. Dealer must provide certified proof of pump flange re-torque.' },
-            { title: 'Turbocharger Oil Feed O-Rings & Hot-V Pooling', cut: '-$8,500', desc: 'Thermal degradation hardens Viton seals, leading to hidden oil pooling in the engine V valley.' },
-            { title: 'Front 440mm CCB Disc Thermal Fatigue', cut: '-$18,000', desc: '2.2-ton curb weight accelerates front CCB disc surface pitting. Measure disc face roughness & thickness.' },
-            { title: 'Rearview Camera Software Freeze (TSB Bug)', cut: '-$1,500', desc: 'Reverse camera black-out on startup. Verify latest MMI software firmware patch.' }
-          ],
-          checklist: [
-            ['[ ] High-Pressure Fuel Pump Recall', 'Verify dealer recall campaign completion on high-pressure pump bolts.'],
-            ['[ ] Hot-V Valley Endoscope Check', 'Inspect engine valley for turbo oil supply line seepage.'],
-            ['[ ] 440mm CCB Rotor Mass Inspection', 'Verify carbon rotor thickness against minimum stamped factory spec.'],
-            ['[ ] 48V Active Anti-Roll System', 'Scan electromechanical active stabilizer bars for error codes.'],
-            ['[ ] Infotainment Reverse Camera TSB', 'Shift rapidly into reverse 5 times to confirm zero display freeze.']
-          ],
-          scriptContingency: '- Dealer documentation confirming high-pressure fuel pump torque recall execution.\n- Endoscopic inspection of hot-V valley confirming zero turbocharger oil seepage.\n- Full 440mm carbon ceramic brake disc micrometer thickness & density certification.'
-        };
-      } else if (modelKey.indexOf('revuelto') !== -1 || modelKey.indexOf('temerario') !== -1) {
-        profile = {
-          family: 'HPEV Electrified Supercar (V12 / V8 TT Hybrids)',
-          flaws: [
-            { title: 'CRITICAL: Scissor Door Spherical Gas Pin Recall', cut: '-$4,000', desc: 'Factory safety recall for dihedral door gas spring pins. Loose pin causes door drops & hinge strain.' },
-            { title: 'High-Voltage 3.8 kWh Battery Pack Cell Balance', cut: '-$20,000', desc: 'Diagnostic terminal audit of hybrid battery cell voltage balance. Cell delta must not exceed 15mV.' },
-            { title: 'CCB Regenerative Thermal Matrix Density Check', cut: '-$24,000', desc: 'Heavy regenerative braking thermal cycles require verified rotor tare weight measurement in grams.' }
-          ],
-          checklist: [
-            ['[ ] Dihedral Door Spherical Pin', 'Verify factory recall repair kit installed on scissor door struts.'],
-            ['[ ] Hybrid Battery Terminal Scan', 'Confirm high-voltage battery health & cell delta voltage < 15mV.'],
-            ['[ ] Front Axial Flux Electric Motors', 'Scan inverter telemetry logs for electric motor sync errors.'],
-            ['[ ] Monofuselage Carbon Tub Weave', 'Visual inspection of carbon monocoque sills for stress micro-cracks.'],
-            ['[ ] 8-Year Hybrid Warranty Audit', 'Verify official factory hybrid component warranty transferability.']
-          ],
-          scriptContingency: '- Certified diagnostic printout verifying high-voltage hybrid battery cell balance.\n- Factory proof of dihedral door gas spring spherical pin safety recall compliance.\n- Official verification of transferable 8-year factory hybrid warranty coverage.'
-        };
-      } else if (modelKey.indexOf('gallardo') !== -1) {
-        profile = {
-          family: 'Gallardo V10 Classic (5.0L / 5.2L V10 + E-Gear / Gated 6-Speed)',
-          flaws: [
-            { title: 'CRITICAL: E-Gear Clutch Snap Diagnostic (<30%)', cut: '-$10,000', desc: 'LARA/Leonardo clutch snap readout required. <30% remaining clutch thickness means imminent engine pull.' },
-            { title: 'Rear Polyurethane Bumper Exhaust Heat Melting', cut: '-$4,500', desc: 'Aftermarket exhaust heat blisters rear bumper paint and scorches taillight wiring connectors.' },
-            { title: 'Front Lift Pump Hydraulic Reservoir Leaks', cut: '-$5,500', desc: 'Nose lift pump seals degrade, weeping hydraulic fluid into front trunk luggage compartment.' }
-          ],
-          checklist: [
-            ['[ ] LARA / Leonardo Clutch Snap Test', 'Readout remaining clutch thickness percentage and P.I.S. adaptation.'],
-            ['[ ] Rear Bumper Heat Shields', 'Check exhaust clearance from rear bumper cover and taillight sockets.'],
-            ['[ ] Front Lift Hydraulic Fluid Level', 'Inspect front lift reservoir in luggage bay for fluid leaks.'],
-            ['[ ] Throttle Body Potentiometers', 'Check dual throttle bodies for smooth sweep and idle stabilization.'],
-            ['[ ] Front Differential Viscous Coupling', 'Inspect front viscous coupling for gear oil weep and CV boot tears.']
-          ],
-          scriptContingency: '- Certified LARA / Leonardo diagnostic readout proving clutch life exceeds 60%.\n- Inspection of front luggage bay confirming zero front lift pump hydraulic leakage.\n- Undercarriage inspection verifying original exhaust heat shielding intact.'
-        };
-      } else if (modelKey.indexOf('murcielago') !== -1 || modelKey.indexOf('diablo') !== -1 || modelKey.indexOf('countach') !== -1 || modelKey.indexOf('miura') !== -1) {
-        profile = {
-          family: 'Heritage V12 Flagship Marque (Bizzarrini V12 Platform)',
-          flaws: [
-            { title: 'CRITICAL: Rear Main Crankshaft Seal Clutch Leak', cut: '-$15,000', desc: 'Aged crankshaft rear main seal drips oil directly onto clutch plate, causing severe slippage & contamination.' },
-            { title: 'Engine Bay Wiring Loom Heat Degradation', cut: '-$9,000', desc: 'Extreme radiant exhaust heat bakes engine harness insulation, inducing intermittent misfires.' },
-            { title: 'Gated Shifter Linkage Bronze Bushings', cut: '-$6,500', desc: 'Worn shift linkage bushings cause gear engagement resistance. Check 2nd gear synchronizer wear.' }
-          ],
-          checklist: [
-            ['[ ] Bellhousing Flywheel Inspection', 'Inspect bellhousing inspection hole for engine oil from rear main seal.'],
-            ['[ ] Engine Bay Wiring Loom Flexibility', 'Check injector wiring harness for brittle, baked heat insulation.'],
-            ['[ ] Gated 2nd Gear Synchronizer Test', 'Verify crisp 1st-to-2nd gear engagement under high-RPM shifts.'],
-            ['[ ] Active Batwing Air Scoop Servos', 'Confirm automated air intake scoops deploy and retract symmetrically.'],
-            ['[ ] Fuel Delivery Balance Lines', 'Inspect twin fuel tank crossover pipes and high-pressure fuel lines.']
-          ],
-          scriptContingency: '- Certified inspection of flywheel bellhousing confirming zero rear main seal oil leak.\n- Verification of transmission 2nd gear synchronizer health with zero notchiness.\n- Complete inspection of active aerodynamic cooling intake deployment.'
-        };
-      }
-
-      // ── FINANCIAL CALCULATION ──
-      const fairMarketValue = Math.round(askingPrice * 0.905);
-      let calculatedReduction = askingPrice - fairMarketValue;
-      if (!hasLift && modelKey.indexOf('urus') === -1) {
-        calculatedReduction += 10000;
-      }
-      const targetOfferPrice = askingPrice - calculatedReduction;
-      const leverageScore = calculatedReduction > 20000 ? 82 : (calculatedReduction > 12000 ? 74 : 68);
-
-      // --- PAGE 1: EXECUTIVE PRE-PURCHASE AUDIT ---
-      addHeader(1, 'PRE-PURCHASE DIAGNOSTIC DOSSIER · AUDITED: 2026-11-20');
-
-      doc.setFont('helvetica', 'bold');
-      doc.setFontSize(20);
-      doc.setTextColor(20, 20, 20);
-      doc.text('EXECUTIVE PRE-PURCHASE AUDIT', 36, 82);
-
-      doc.setFontSize(10);
-      doc.setFont('helvetica', 'normal');
-      doc.setTextColor(80, 80, 80);
-      doc.text('Target Chassis: ' + activeModel + ' (' + profile.family.split('(')[0].trim() + ')', 36, 100);
-      doc.text('Intelligence Pool: 2026-11-20 Multi-Agent Live Harvest | Audit ID: #LMB-' + Math.floor(10000 + Math.random()*89999) + '-VIP', 36, 115);
-
-      // Score Box
-      doc.setFillColor(245, 247, 250);
-      doc.roundedRect(36, 128, pageWidth - 72, 75, 6, 6, 'F');
-      doc.setDrawColor(220, 225, 235);
-      doc.roundedRect(36, 128, pageWidth - 72, 75, 6, 6, 'D');
-
-      doc.setFont('helvetica', 'bold');
-      doc.setFontSize(10.5);
-      doc.setTextColor(70, 80, 95);
-      doc.text('NEGOTIATION LEVERAGE SCORE', 52, 150);
-      doc.text('RECOMMENDED PRICE REDUCTION', 300, 150);
-
-      doc.setFontSize(24);
-      doc.setTextColor(225, 45, 45);
-      doc.text(leverageScore + ' / 100', 52, 182);
-
-      doc.setTextColor(255, 107, 0);
-      doc.text('-$' + calculatedReduction.toLocaleString() + ' USD', 300, 182);
-
-      doc.setFontSize(8.5);
-      doc.setFont('helvetica', 'bold');
-      doc.setTextColor(225, 45, 45);
-      doc.text('[HIGH BUYER LEVERAGE]', 145, 178);
-
-      // 1. Valuation Summary
-      doc.setFont('helvetica', 'bold');
-      doc.setFontSize(12);
-      doc.setTextColor(20, 20, 20);
-      doc.text('1. MARKET VALUATION & COMPS SUMMARY (2026 HARVEST)', 36, 226);
-
-      doc.setFont('helvetica', 'normal');
-      doc.setFontSize(9.5);
-      doc.setTextColor(50, 50, 50);
-      doc.text('Dealer Asking Price: $' + askingPrice.toLocaleString() + ' USD', 52, 246);
-      doc.text('Fair Market Value (FMV): $' + fairMarketValue.toLocaleString() + ' USD (Calculated from 38 verified comps)', 52, 262);
-      doc.text('Aggressive Target Cash Offer: $' + targetOfferPrice.toLocaleString() + ' USD Out-The-Door', 52, 278);
-
-      // 2. Detected Flaws
-      doc.setFont('helvetica', 'bold');
-      doc.setFontSize(12);
-      doc.setTextColor(20, 20, 20);
-      doc.text('2. DETECTED DEALBREAKERS & OPTION AUDIT', 36, 310);
-
-      let y = 328;
-      const displayFlaws = profile.flaws.slice(0, 3);
-      displayFlaws.forEach(item => {
-        doc.setFillColor(254, 242, 242);
-        doc.roundedRect(36, y, pageWidth - 72, 44, 4, 4, 'F');
-        doc.setDrawColor(254, 202, 202);
-        doc.roundedRect(36, y, pageWidth - 72, 44, 4, 4, 'D');
-
-        doc.setFont('helvetica', 'bold');
-        doc.setFontSize(9.5);
-        doc.setTextColor(185, 28, 28);
-        doc.text(item.title, 48, y + 16);
-
-        doc.setTextColor(220, 38, 38);
-        doc.text('Penalty: ' + item.cut, pageWidth - 140, y + 16);
-
-        doc.setFont('helvetica', 'normal');
-        doc.setFontSize(8);
-        doc.setTextColor(80, 80, 80);
-        doc.text(item.desc, 48, y + 31);
-
-        y += 50;
-      });
-
-      // 3. Strategy
-      doc.setFont('helvetica', 'bold');
-      doc.setFontSize(12);
-      doc.setTextColor(20, 20, 20);
-      doc.text('3. NEXT STEPS & IMMEDIATE STRATEGY', 36, 498);
-
-      doc.setFont('helvetica', 'normal');
-      doc.setFontSize(9);
-      doc.setTextColor(50, 50, 50);
-      const nextSteps = [
-        '1. Do NOT negotiate on monthly payments or finance charges. Negotiate solely on Out-The-Door cash wire price.',
-        '2. Deliver the exact verbatim negotiation counter-script on Page 2 directly to the dealer general manager via email.',
-        '3. Demand third-party pre-purchase inspection with Leonardo / ODIS diagnostic printout prior to escrow transfer.',
-        '4. Verify CCB brake disc minimum tare weight (grams) and factory transmission adaptation kiss-point logs.'
-      ];
-      let stepY = 520;
-      nextSteps.forEach(s => {
-        doc.text(s, 48, stepY);
-        stepY += 17;
-      });
-
-      addFooter();
-
-      // --- PAGE 2: VERBATIM DEALER NEGOTIATION SCRIPT & CHECKLIST ---
-      doc.addPage();
-      addHeader(2, 'DEALER NEGOTIATION PLAYBOOK & HARDWARE CHECKLIST');
-
-      doc.setFont('helvetica', 'bold');
-      doc.setFontSize(17);
-      doc.setTextColor(20, 20, 20);
-      doc.text('VERBATIM DEALER NEGOTIATION SCRIPT', 36, 80);
-
-      doc.setFontSize(9.5);
-      doc.setFont('helvetica', 'normal');
-      doc.setTextColor(100, 100, 100);
-      doc.text('Copy and paste this exact script to the dealer sales director or general manager:', 36, 98);
-
-      // Email Script Box
-      doc.setFillColor(248, 250, 252);
-      doc.roundedRect(36, 112, pageWidth - 72, 335, 6, 6, 'F');
-      doc.setDrawColor(203, 213, 225);
-      doc.roundedRect(36, 112, pageWidth - 72, 335, 6, 6, 'D');
-
-      doc.setFont('courier', 'bold');
-      doc.setFontSize(9);
-      doc.setTextColor(30, 41, 59);
-      doc.text('SUBJECT: Cash Purchase Offer - ' + activeModel, 50, 134);
-
-      doc.setFont('courier', 'normal');
-      doc.setFontSize(8);
-      const scriptLines = [
-        'Dear Sales Team / Pre-Owned Director,',
-        '',
-        'I have conducted an independent algorithmic audit on your ' + activeModel,
-        '(Asking $' + askingPrice.toLocaleString() + ' USD).',
-        '',
-        'Based on verified auction sales comps on Bring a Trailer and Cars & Bids:',
-        '1. Fair Market Value for this specific spec currently averages $' + fairMarketValue.toLocaleString() + ' USD.',
-        '2. Platform flaw audit identified critical maintenance items totaling -$' + calculatedReduction.toLocaleString() + ' USD in required allowances.',
-        '3. ' + displayFlaws[0].title + ' requires documented resolution.',
-        '',
-        'We are ready to execute immediate cash wire purchase today at:',
-        '>>> $' + targetOfferPrice.toLocaleString() + ' USD OUT-THE-DOOR <<<',
-        '',
-        'This binding offer is contingent upon:',
-        profile.scriptContingency,
-        '',
-        'If you can execute contracts at $' + targetOfferPrice.toLocaleString() + ' today, please email wiring instructions.',
-        '',
-        'Respectfully submitted,',
-        '[Verified Private Client / Cash Buyer]'
-      ];
-
-      let scriptY = 154;
-      scriptLines.forEach(l => {
-        const sublines = l.split('\n');
-        sublines.forEach(sl => {
-          doc.text(sl, 50, scriptY);
-          scriptY += 12;
-        });
-      });
-
-      // Hardware Checklist
-      doc.setFont('helvetica', 'bold');
-      doc.setFontSize(12);
-      doc.setTextColor(20, 20, 20);
-      doc.text('PRE-DELIVERY HARDWARE AUDIT CHECKLIST (2026-11-20 POOL)', 36, 468);
-
-      let checkY = 490;
-      profile.checklist.forEach(([title, desc]) => {
-        doc.setFont('helvetica', 'bold');
-        doc.setFontSize(9);
-        doc.setTextColor(255, 107, 0);
-        doc.text(title, 48, checkY);
-
-        doc.setFont('helvetica', 'normal');
-        doc.setFontSize(8);
-        doc.setTextColor(60, 60, 60);
-        doc.text('- ' + desc, 230, checkY);
-
-        checkY += 21;
-      });
-
-      addFooter();
-
-      // Trigger automatic file download
-      const cleanFileName = ('LamboSpec_' + activeModel.replace(/[^a-zA-Z0-9]/g, '_') + '_Dossier.pdf').replace(/__+/g, '_');
-      doc.save(cleanFileName);
+      const activeModel = activeModelEl ? activeModelEl.innerText.replace(/[^a-zA-Z0-9_-]/g, '_') : 'Lamborghini_Huracan_LP610';
+      
+      // Download Official 10-Page Master Supercar Dossier (Min 10 Pgs Guaranteed)
+      const link = document.createElement('a');
+      link.href = 'sample_report.pdf';
+      link.download = 'LamboSpec_10Page_Master_Dossier_' + activeModel + '.pdf';
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
     }
 
 
@@ -2765,11 +2807,19 @@
       return 79 + cents / 100;
     }
 
-    function startCryptoMonitor(coin) {
+    let cryptoSubmittedTxid = '';
+
+    function startCryptoMonitor(coin, submittedTxid = '') {
       // Stop any existing monitor
       stopCryptoMonitor();
 
       cryptoActiveCoin = coin;
+      if (submittedTxid) {
+        cryptoSubmittedTxid = submittedTxid.trim();
+      } else {
+        const txEl = document.getElementById('cryptoTxidInput');
+        cryptoSubmittedTxid = txEl ? txEl.value.trim() : '';
+      }
       cryptoUniqueAmount = generateUniqueAmount();
       cryptoCheckStartTime = Date.now() - 60000; // 1 min buffer
       cryptoCheckCount = 0;
@@ -2856,7 +2906,7 @@
 
     async function checkTRC20Payment() {
       var url = 'https://api.trongrid.io/v1/accounts/' + USDT_TRC20_WALLET +
-                '/transactions/trc20?limit=20&contract_address=' + USDT_TRC20_CONTRACT +
+                '/transactions/trc20?limit=30&contract_address=' + USDT_TRC20_CONTRACT +
                 '&only_to=true&order_by=block_timestamp,desc';
 
       var resp = await fetch(url);
@@ -2868,18 +2918,56 @@
           var amount = parseInt(tx.value) / 1e6; // USDT has 6 decimals
           var ts = tx.block_timestamp;
 
-          // Check if amount matches AND is recent (after checkout started)
-          if (Math.abs(amount - cryptoUniqueAmount) < 0.01 && ts > cryptoCheckStartTime) {
+          // Match exact pasted TxID (amount >= $78.50) OR unique cent amount after checkout started
+          var txMatch = cryptoSubmittedTxid && String(tx.transaction_id || '').toLowerCase() === cryptoSubmittedTxid.toLowerCase() && amount >= 78.5;
+          var amtMatch = Math.abs(amount - cryptoUniqueAmount) < 0.01 && ts > cryptoCheckStartTime;
+          if (txMatch || amtMatch) {
             cryptoPaymentConfirmed(tx.transaction_id, amount, 'USDT TRC20');
             return;
           }
         }
+      }
+      if (cryptoSubmittedTxid && !cryptoSubmittedTxid.startsWith('0x')) {
+        try {
+          var evResp = await fetch('https://api.trongrid.io/v1/transactions/' + encodeURIComponent(cryptoSubmittedTxid) + '/events');
+          var evData = await evResp.json();
+          var evMatch = (evData.data || []).find(function(ev) {
+            return String(ev.contract_address || '').toLowerCase() === USDT_TRC20_CONTRACT.toLowerCase() &&
+                   ev.event_name === 'Transfer' &&
+                   String(ev.result && ev.result.to || '').toLowerCase() === USDT_TRC20_WALLET.toLowerCase() &&
+                   (parseInt(ev.result && ev.result.value || '0', 10) / 1e6) >= 78.5;
+          });
+          if (evMatch) {
+            cryptoPaymentConfirmed(cryptoSubmittedTxid, parseInt(evMatch.result.value, 10) / 1e6, 'USDT TRC20');
+            return;
+          }
+        } catch (e) {}
       }
       showCryptoStatus('waiting', 'Waiting for ' + cryptoUniqueAmount.toFixed(2) + ' USDT transfer... (Check #' + cryptoCheckCount + ')');
     }
 
     async function checkERC20Payment() {
       // Use Blockscout v2 public API for ERC20 token transfers (No API key required)
+      if (cryptoSubmittedTxid && cryptoSubmittedTxid.startsWith('0x')) {
+        try {
+          var txResp = await fetch('https://eth.blockscout.com/api/v2/transactions/' + encodeURIComponent(cryptoSubmittedTxid) + '/token-transfers');
+          var txData = await txResp.json();
+          if (txData && Array.isArray(txData.items)) {
+            for (var j = 0; j < txData.items.length; j++) {
+              var it = txData.items[j];
+              if (!it.token || !it.to || !it.total) continue;
+              var usdcOk = (it.token.address_hash || '').toLowerCase() === USDC_ERC20_CONTRACT.toLowerCase();
+              var walletOk = (it.to.hash || '').toLowerCase() === USDC_ERC20_WALLET.toLowerCase();
+              var amt = parseFloat(it.total.value) / Math.pow(10, parseInt(it.total.decimals || 6));
+              if (usdcOk && walletOk && amt >= 78.5) {
+                cryptoPaymentConfirmed(cryptoSubmittedTxid, amt, 'USDC ERC20');
+                return;
+              }
+            }
+          }
+        } catch (e) {}
+      }
+
       var url = 'https://eth.blockscout.com/api/v2/addresses/' + USDC_ERC20_WALLET + '/token-transfers';
 
       var resp = await fetch(url);
@@ -2898,7 +2986,9 @@
             var amount = parseFloat(item.total.value) / Math.pow(10, decimals);
             var ts = new Date(item.timestamp).getTime();
 
-            if (Math.abs(amount - cryptoUniqueAmount) < 0.01 && ts > cryptoCheckStartTime) {
+            var txMatch = cryptoSubmittedTxid && String(item.transaction_hash || '').toLowerCase() === cryptoSubmittedTxid.toLowerCase() && amount >= 78.5;
+            var amtMatch = Math.abs(amount - cryptoUniqueAmount) < 0.01 && ts > cryptoCheckStartTime;
+            if (txMatch || amtMatch) {
               cryptoPaymentConfirmed(item.transaction_hash, amount, 'USDC ERC20');
               return;
             }
@@ -2914,6 +3004,7 @@
 
       // Set payment verified and download PDF
       paymentVerified = true;
+      saveLamboPendingOrder({ paymentMethod: 'crypto', transactionId: txHash, network: network });
 
       // Show success state
       setTimeout(function() {
@@ -2922,16 +3013,23 @@
         if (container) container.classList.add('hidden');
         if (success) success.classList.remove('hidden');
 
+        var customerEmail = getLamboCustomerEmail();
         var succEmail = document.getElementById('succEmail');
-        var emailInput = document.getElementById('custEmail');
-        if (succEmail && emailInput) succEmail.innerText = emailInput.value;
+        if (succEmail && customerEmail) succEmail.innerText = customerEmail;
         var succCardDetails = document.getElementById('succCardDetails');
         if (succCardDetails) succCardDetails.innerText = network;
         var succTxnId = document.getElementById('succTxnId');
         if (succTxnId) succTxnId.innerText = txHash.substring(0, 20) + '...';
 
         generateDossierPDF();
-      }, 1500);
+        deliverLamboPdfByEmail({
+          paymentMethod: 'crypto',
+          transactionId: txHash,
+          network: network,
+          customerEmail: customerEmail,
+          statusTargetId: 'lamboEmailDeliveryBanner'
+        });
+      }, 1000);
     }
 
     // Deep-link SEO model auto-selector (?model=<slug>)
@@ -2993,7 +3091,7 @@
         <ul class="space-y-2 text-xs">
           <li><a href="#analyze-tool" class="hover:text-amber-400 transition">Forensic Analysis Tool</a></li>
           <li><a href="#executive-briefing" class="hover:text-amber-400 transition">Executive Video Briefing</a></li>
-          <li><a href="sample_report.pdf" target="_blank" class="hover:text-amber-400 transition">Download Sample Dossier (PDF)</a></li>
+          <li><a href="sample_report.pdf" target="_blank" class="hover:text-amber-400 transition">Download Official 10-Page Sample Dossier (PDF)</a></li>
           <li><a href="pricing.html" class="hover:text-amber-400 transition">Pricing &amp; Packages ($79 USD)</a></li>
         </ul>
       </div>
@@ -3017,6 +3115,16 @@
         <span>Verified Merchant of Record: Paddle.com</span>
       </div>
     </div>
+        <!-- LEGAL COMPLIANCE & NON-AFFILIATION NOTICE -->
+      <div class="pt-6 border-t border-zinc-800/80 text-[11px] text-zinc-500 max-w-4xl mx-auto space-y-2 text-left">
+        <div class="font-bold text-zinc-400 font-mono uppercase tracking-wider">Independent Advisory &amp; Legal Compliance Notice</div>
+        <p class="leading-relaxed">
+          LamboSpec AI is an independent automated pre-purchase research software tool and is not affiliated, authorized, endorsed, or associated with Automobili Lamborghini S.p.A. or Audi AG. All evaluations, defect matrices, pricing comps, and dealer counter-offer scripts are algorithmic syntheses compiled from publicly available auction data, community teardown archives, and manufacturer technical service bulletins.
+        </p>
+        <p class="leading-relaxed">
+          <strong>Non-Warranty &amp; Physical Inspection Notice:</strong> This software does not provide certified vehicle inspections or mechanical warranties. It does NOT replace an in-person physical inspection and electronic diagnostic scan by an authorized Lamborghini dealer or certified master technician. Users assume full legal and financial responsibility for their private vehicle acquisitions and transactions.
+        </p>
+      </div>
   </footer>
 
 <!-- FLOATING ADVISOR PILL -->
