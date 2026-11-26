@@ -1399,7 +1399,10 @@ Respond ONLY with this raw JSON structure (no markdown fences):
     let cabinetActiveCryptoCoin = 'usdt';
 
     function getCabinetApiUrl(path) {
-      const custom = (localStorage.getItem(CABINET_API_BASE_KEY) || window.FEDERAL216_API_BASE || '').trim().replace(/\/+$/, '');
+      const host = window.location.hostname;
+      const isDirectBackend = host === 'localhost' || host === '127.0.0.1' || host.endsWith('.vercel.app');
+      const fallbackBase = isDirectBackend ? '' : 'https://cabinetscan-ai.vercel.app';
+      const custom = (localStorage.getItem(CABINET_API_BASE_KEY) || window.FEDERAL216_API_BASE || fallbackBase).trim().replace(/\/+$/, '');
       return custom ? `${custom}${path}` : path;
     }
 
